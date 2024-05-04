@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  background-color: rgb(18, 18, 62);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(18, 18, 62);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: #8a19e3;
+  font-size: 1.2rem;
+}
+
+main hr {
+  border: 0;
+  background-color: #9c97f1;
+  height: 1.2px;
+  margin: 60px 84px;
+}
+
+.left {
+  font-size: 1.5rem;
+}
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: initial;  
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -4;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 200px 0;
+  z-index: 1;
+  position: relative;
+  background-attachment: #fff;
+  overflow: hidden;
+}
+.rightSection {
+  width: 80%;
+  z-index: 1;
+}
+.rightSection img {
+  width: 80%;
+  z-index: 1;
+}
+
+.firstSection > div {
+  width: 30%;
+}
+.name-title {
+  width: 34vw;
+}
+.vertical-title-date {
+  width: 40vh;
+}
+
+.leftSection {
+  font-size: 3rem;
+}
+
+.purple {
+  color: rgb(170, 107, 228);
+}
+
+.developer-title {
+  color: rgb(170, 107, 228);
+  width: 132vh;
+}
+
+.text-gray {
+  color: gray;
+}
+
+.secondSection {
+  max-width: 80vw;
+  margin: auto;
+  height: 80vh;
+}
+
+.secondSection h1 {
+  font-size: 1.9rem;
+}
+
+.secondSection .box {
+  background-color: white;
+  width: 77vw;
+  height: 2px;
+  margin: 56px 0;
+  display: flex;
+}
+
+.secondSection .vertical {
+  height: 93px;
+  width: 1px;
+  background-color: white;
+  margin: 0 10vw;
+}
+
+.image-top {
+  width: 60px;
+  position: relative;
+  top: -60px;
+  left: -30px;
+}
+
+.vertical-title {
+  position: relative;
+  top: 25px;
+  width: 150px;
+  font-size: 14px;
+}
+
+.vertical-desc {
+  position: relative;
+  top: 30px;
+  color: gray;
+  width: 150px;
+  font-size: 12px;
+}
+
+.vertical-title:hover,
+.vertical-desc:hover {
+  color: #8a19e3;
+  font-size: large;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  padding: 23px 122px;
+  justify-content: space-evenly;
+  background-color: #0e0e1a;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer > div {
+  width: 223px;
+}
+
+.footer-rights {
+  background-color: #0e0e1a;
+  text-align: center;
+  color: gray;
+  padding: 12px 0;
+}
+.fancy {
+  font-family: "Marcellus SC", serif;
+}
+/* Responsive Css Coding Created By Shift Media Solutions| SMS */
+.gb {
+  padding: 8px 20px;
+  margin-right: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.gb-bordered {
+  padding: 6px 20px;
+  position: relative;
+  border: 4px solid transparent;
+  background-clip: padding-box;
+  transition: 0.5s all;
+}
+/* Responsive Css Coding Created By Shift Media Solutions| SMS */
+.gb-bordered:after {
+  transition: 0.5s all;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  content: "";
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.gb-rounded {
+  border-radius: 50px;
+}
+
+.gb-rounded.gb-bordered:after {
+  border-radius: 50px;
+}
+
+.hover-fill {
+  transition: 0.6s all;
+}
+
+.hover-fill:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.hover-fill.reverse {
+  background-color: transparent;
+  color: white;
+}
+
+.hover-fill.reverse:hover {
+  background-color: white;
+  color: #333;
+}
+
+.hover-slide {
+  transition: 0.6s all;
+}
+
+.hover-slide:after {
+  background-size: 200% 100%;
+  background-position: 0% 0;
+}
+
+.hover-slide:hover:after {
+  background-position: 100% 0;
+}
+
+#gb10:after {
+  background-image: linear-gradient(
+    135deg,
+    #f68918 0%,
+    #f68918 31%,
+    #ae3e9f 31%,
+    #ae3e9f 42%,
+    #d2645c 42%,
+    #d2645c 49%,
+    #8a19e3 49%,
+    #8a19e3 100%
+  );
+}
+
+@media screen and (max-width: 1400px) {
+  body {
+    min-width: fit-content;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  .secondSection .vertical {
+    height: unset;
+  }
+
+  .vertical-title {
+    position: relative;
+    width: 150px;
+    font-size: 14px;
+  }
+
+  .vertical-title,
+  .vertical-desc {
+    left: 45px;
+    top: 65px;
+  }
+  .vertical-title:hover,
+  .vertical-desc:hover {
+    color: #8a19e3;
+  }
+
+  .secondSection .box {
+    width: 50vh;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .firstSection {
+    flex-direction: column-reverse;
+  }
+  .name-title {
+    width: 50%;
+  }
+
+  .leftSection {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rightSection {
+    width: 721px !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .rightSection img {
+    width: 45vw;
+    margin-bottom: 73px;
+  }
+
+  .image-top {
+    top: 133px;
+  }
+
+  .secondSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 141vh;
+  }
+
+  .developer-title {
+    display: flex;
+    justify-content: center;
+    color: rgb(170, 107, 228);
+    width: 132vh;
+  }
+}

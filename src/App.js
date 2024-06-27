@@ -10,15 +10,15 @@ import Contactme from './components/Contactme';
 
 function App() {
   return (
-  <>
-  <Header />
+    <>
+      <Header />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<Aboutus />} />
         <Route path='/Projects' element={<Projects />} />
         <Route path='/contactme' element={<Contactme />} />
       </Routes>
-    <Footer />
+      <Footer />
     </>
   );
 }

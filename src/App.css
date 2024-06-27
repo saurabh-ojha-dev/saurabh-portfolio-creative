@@ -429,7 +429,7 @@ canvas {
   width: 40%;
   padding: 10px;
   margin: 10px;
-  background-color:  #30ce43;
+  background-color: #30ce43;
   border-radius: 30px;
 }
 
@@ -444,14 +444,11 @@ canvas {
   padding: 10px;
   margin: 10px;
 }
-.container .row {
-}
+
 #contact-information {
   padding: 0px !important;
 }
 #contact-information-text {
-  /* padding: 0px !important;
-  margin: 0px !important; */
   color: darkred;
   margin-left: 10px;
   margin-top: 20px;

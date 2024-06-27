@@ -1,7 +1,6 @@
 import React from 'react'
 import avatarImage from '../assets/images/mf-avatar.svg';
 import herodevices from '../assets/images/hero-devices.svg';
-import './Media_slider_carousel.css'; // Import your custom CSS for additional styling
 import "../assets/css/aboutus.css";
 
 const Aboutus = () => {

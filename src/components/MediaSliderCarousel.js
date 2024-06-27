@@ -60,9 +60,9 @@ const MediaSliderCarousel = () => {
                                 <div className="row">
                                     {carouselItems.slice(slideIndex * 5, slideIndex * 5 + 5).map((innerItem) => (
                                         <div className="col-md-2" key={innerItem.id}>
-                                            <a className="thumbnail" href="#">
+                                            {/* <a className="thumbnail" href="/"> */}
                                                 <img src={innerItem.image} alt={`Slide ${innerItem.id}`} />
-                                            </a>
+                                            {/* </a> */}
                                         </div>
                                     ))}
                                 </div>

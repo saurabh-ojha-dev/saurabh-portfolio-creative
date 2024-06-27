@@ -17,8 +17,8 @@ const Contactme = () => {
       <h1 className='contact-me-heading text-center my-4'> Get In Tou<span className='contact-me-heading-green'>ch with Me </span></h1>
       <p className='contact-me-heading-description text-center my-2'>Leave a message below, and I'll get back to you as soon as possible</p>
     </div>
-<br />
-    <div className='container' style={{ backgroundColor: "wheat", borderRadius:"40px" }}>
+    <br />
+    <div className='container' style={{ backgroundColor: "wheat", borderRadius: "40px" }}>
 
       <div className='row'>
 
@@ -53,7 +53,7 @@ const Contactme = () => {
           <div className='row' id="contact-information">
             <div className='col-md-2'> <i className="fa-regular fa-envelope" id="iframe"></i> </div>
             <div className='col' id="contact-information-text">Email<br />sourabhojha12@gmail.com</div>
-            
+
           </div>
 
           <div className='row' id="contact-information">

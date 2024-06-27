@@ -1,6 +1,6 @@
 import React from 'react'
 import "../assets/css/projects.css";
-import Media_slider_carousel from './Media_slider_carousel';
+import MediaSliderCarousel from './MediaSliderCarousel';
 
 
 const Projects = () => {
@@ -17,7 +17,7 @@ const Projects = () => {
                                     <p className="card-description">
                                         A dynamic PHP website, offers seamless thread management. Enhancing collaboration and organization, it simplifies discussions with its user-friendly interface.
                                     </p>
-                                    <a href="http://threadsolutions.infinityfreeapp.com/" target="_blank" className="card-btn">Check it Out</a>
+                                    <a href="http://threadsolutions.infinityfreeapp.com/" target="_blank"  rel="noreferrer" className="card-btn">Check it Out</a>
                                 </div>
                             </article>
                         </div>
@@ -28,7 +28,7 @@ const Projects = () => {
                                 <div className="card-data">
                                     <h2 className="card-title">WebNews</h2>
                                     <p className="card-description"> A dynamic React application delivering real-time news updates and stay informed and engaged with personalized content in a seamless browsing experience.</p>
-                                    <a href="https://github.com/Saurabh-ojha-2000/WebNews" target='_blank' className="card-btn">Check it Out</a>
+                                    <a href="https://github.com/Saurabh-ojha-2000/WebNews" target='_blank'  rel="noreferrer" className="card-btn">Check it Out</a>
                                 </div>
                             </article>
                         </div>
@@ -41,7 +41,7 @@ const Projects = () => {
                                     <p className="card-description">
                                         Workrise is an innovative platform that connects freelancers with clients seeking a wide range of services, from design to consulting in the gig economy.
                                     </p>
-                                    <a href="https://work-rise.vercel.app/" target='_blank' className="card-btn">Check it Out</a>
+                                    <a href="https://work-rise.vercel.app/" target='_blank'  rel="noreferrer" className="card-btn">Check it Out</a>
                                 </div>
                             </article>
                         </div>
@@ -56,7 +56,7 @@ const Projects = () => {
                                     <h2 className="card-title">CRM Panel</h2>
                                     <p className="card-description">
                                         The Comprehensive Customer CRM Panel is an advanced system for managing customer interactions, orders, and feedback to enhance efficiency and customer satisfaction.</p>
-                                    <a href="https://github.com/Saurabh-ojha-2000/Admin-Panel" target="_blank" className="card-btn">Check it Out</a>
+                                    <a href="https://github.com/Saurabh-ojha-2000/Admin-Panel" target="_blank"  rel="noreferrer" className="card-btn">Check it Out</a>
                                 </div>
                             </article>
                         </div>
@@ -67,7 +67,7 @@ const Projects = () => {
                                     <h2 className="card-title">Visualization Dashboard</h2>
                                     <p className="card-description">
                                     A dynamic dashboard for visualizing key metrics through interactive graphs, enhancing data-driven decision-making & performance tracking.</p>
-                                    <a href="https://github.com/Saurabh-ojha-2000/Graphs-Visualization-Dashboard" target='_blank' className="card-btn">Check it Out</a>
+                                    <a href="https://github.com/Saurabh-ojha-2000/Graphs-Visualization-Dashboard" target='_blank'  rel="noreferrer" className="card-btn">Check it Out</a>
                                 </div>
                             </article>
                         </div>
@@ -79,7 +79,7 @@ const Projects = () => {
             <br />
             <br />
 
-            <Media_slider_carousel />
+            <MediaSliderCarousel />
         </>
 
     )

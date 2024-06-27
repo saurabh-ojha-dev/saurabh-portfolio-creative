@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import { ReactTyped } from "react-typed";
 import './Media_slider_carousel.css'; // Import your custom CSS for additional styling
-import Media_slider_carousel from './Media_slider_carousel';
-import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button } from 'react-bootstrap';
+import MediaSliderCarousel from './MediaSliderCarousel';
 
 const Home = () => {
 
@@ -34,20 +33,20 @@ const Home = () => {
                     for (var j = 0; j < numw; j++) {
                         var diagnalW = j * spacing + (i % 2 ? 0 : spacing / 2);
                         var diagnalH = i * spacing;
-                        var arr = [position[0] - diagnalW, position[1] - diagnalH],
-                            wave = Math.sqrt(arr[0] * arr[0] + arr[1] * arr[1]),
-                            arr = [arr[0] / wave, arr[1] / wave],
+                        var arr1 = [position[0] - diagnalW, position[1] - diagnalH],
+                            wave = Math.sqrt(arr1[0] * arr1[0] + arr1[1] * arr1[1]),
+                            arr2 = [arr1[0] / wave, arr1[1] / wave],
                             angle = 50 * (Math.cos(p / 360 - wave / 105) - 1);
                         $.beginPath();
-                        $.arc(diagnalW + arr[0] * angle, diagnalH + arr[1] * angle, 2.8, 0, 2 * Math.PI, false);
+                        $.arc(diagnalW + arr2[0] * angle, diagnalH + arr2[1] * angle, 2.8, 0, 2 * Math.PI, false);
                         $.closePath();
                         $.fill();
                         for (var n = 0; n < 5; n++) {
                             var tail = 50 * (Math.cos((p - 50 * n) / 360 - wave / 105) - 1);
                             $.beginPath();
-                            $.moveTo(diagnalW + arr[0] * angle, diagnalH + arr[1] * angle);
+                            $.moveTo(diagnalW + arr2[0] * angle, diagnalH + arr2[1] * angle);
                             $.lineWidth = 5 - n;
-                            $.lineTo(diagnalW + arr[0] * tail, diagnalH + arr[1] * tail);
+                            $.lineTo(diagnalW + arr2[0] * tail, diagnalH + arr2[1] * tail);
                             $.stroke();
                         }
                     }
@@ -91,8 +90,8 @@ const Home = () => {
                             <br />
                         </div>
                         <div className='button' style={{width:"103%"}}>
-                            <a href="https://drive.google.com/file/d/1yblUm99e04zSw6PpOiELJ-S8lreH-D4Z/view?usp=drive_link" target='_blank'>   <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Download Resume</button></a>
-                            <a href="https://drive.google.com/file/d/1ZuF8Kpp2_MVoTMoFzAo-CfwVcr1SRr3c/view?usp=drive_link" target='_blank' style={{ textDecoration: "none" }}>   <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Download Cover Letter</button></a>
+                            <a href="https://drive.google.com/file/d/1q1WMhpg06MW0AGUX4htlLAoBGsPeeJM5/view?usp=drive_link" target='_blank' rel="noreferrer">   <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Download Resume</button></a>
+                            <a href="https://drive.google.com/file/d/1UiVjfRTPxJgljfuQOJZS3fyua8jQgP4G/view?usp=drive_link" target='_blank' rel="noreferrer" style={{ textDecoration: "none" }}>   <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Download Cover Letter</button></a>
                         </div>
                     </div>
                     <div className="rightSection"><img className="homejs-image" src={require("../assets/images/bg.png")} alt="Loading" /></div>
@@ -110,23 +109,19 @@ const Home = () => {
                         <div className="vertical">
                             <img className="image-top " src={require("../assets/images/web.png")} alt="load" />
                             <div className="vertical-title">Web Developer Intern<div className='vertical-title-date'> (Jan 2023 - Feb 2023)</div></div>
-                            <div className="vertical-desc"><a className='work-experience-link' href="https://www.thesparksfoundationsingapore.org/" target='_blank'>The Sparks Foundation</a> </div>
+                            <div className="vertical-desc"><a className='work-experience-link' href="https://www.thesparksfoundationsingapore.org/" target='_blank' rel="noreferrer">The Sparks Foundation</a> </div>
                         </div>
                         <div className="vertical">
                             <img className="image-top" src={require("../assets/images/web.png")} alt="load" />
                             <div className="vertical-title">Web Developer Intern <div className='vertical-title-date'> (April 2023 - May 2023)</div></div>
-                            <div className="vertical-desc"><a className='work-experience-link' href="https://vedobi.com/" target='_blank' >Bestone Healthcare Products Private Limited </a> </div>
+                            <div className="vertical-desc"><a className='work-experience-link' href="https://vedobi.com/" target='_blank' rel="noreferrer">Bestone Healthcare Products Private Limited </a> </div>
                         </div>
                         <div className="vertical">
                             <img className="image-top" src={require("../assets/images/web.png")} alt="load" />
                             <div className="vertical-title">Full Stack Web Developer <div className='vertical-title-date'> (june 2023 - Present)</div></div>
-                            <div className="vertical-desc"><a className='work-experience-link' href="https://vedobi.com/" target='_blank'>Vedobi (E-commerce) </a> </div>
+                            <div className="vertical-desc"><a className='work-experience-link' href="https://vedobi.com/" target='_blank'rel="noreferrer">Vedobi (E-commerce) </a> </div>
                         </div>
-                        {/* <div className="vertical">
-                            <img className="image-top" src={require("../assets/images/web.png")} alt="load" />
-                            <div className="vertical-title">Mern Stack Developer<div className='vertical-title-date'>  (Jan 2023 - Feb 2023)</div></div>
-                            <div className="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ipsa! </div>
-                        </div> */}
+                       
                     </div>
                 </section>
 
@@ -151,7 +146,7 @@ const Home = () => {
                                         <h2 className="card-title">Achievement</h2>
                                         <p className="card-description"> Introduction To C Plus Plus By SkillUP
                                         </p>
-                                        <a href="https://drive.google.com/file/d/1mO_PQrsnUYihcVqONsadwGsfOIAdwDqd/view?usp=drive_link" target="_blank" className="card-btn">Check it Out</a>
+                                        <a href="https://drive.google.com/file/d/1mO_PQrsnUYihcVqONsadwGsfOIAdwDqd/view?usp=drive_link" target="_blank" rel="noreferrer" className="card-btn">Check it Out</a>
                                     </div>
                                 </article>
                             </div>
@@ -162,7 +157,7 @@ const Home = () => {
                                     <div className="card-data">
                                         <h2 className="card-title">Achievement</h2>
                                         <p className="card-description"> Hack The Mountains 3.0 By Sudan's Tech</p>
-                                        <a href="https://drive.google.com/file/d/1DF-X-7quAkcAC0b8me32c-POI31eFLQD/view?usp=drive_link" target="_blank"  className="card-btn">Check it Out</a>
+                                        <a href="https://drive.google.com/file/d/1DF-X-7quAkcAC0b8me32c-POI31eFLQD/view?usp=drive_link" target="_blank" rel="noreferrer"  className="card-btn">Check it Out</a>
                                     </div>
                                 </article>
                             </div>
@@ -173,7 +168,7 @@ const Home = () => {
                                     <div className="card-data">
                                         <h2 className="card-title">Achievement</h2>
                                         <p className="card-description">The MERN Stack By Mindluster</p>
-                                        <a href="https://drive.google.com/file/d/1xGoNkRyiMmvzxndY9CA8KF4xwFDmkZ2I/view?usp=drive_link" target="_blank"  className="card-btn">Check it Out</a>
+                                        <a href="https://drive.google.com/file/d/1xGoNkRyiMmvzxndY9CA8KF4xwFDmkZ2I/view?usp=drive_link" target="_blank" rel="noreferrer"  className="card-btn">Check it Out</a>
                                     </div>
                                 </article>
                             </div>
@@ -187,7 +182,7 @@ const Home = () => {
                                     <div className="card-data">
                                         <h2 className="card-title">Internship</h2>
                                         <p className="card-description">Web Developer Intern at The Sparks Foundation</p>
-                                        <a href="https://drive.google.com/file/d/1u5RNQrsdCJXro4IWuZoMT_uqckT5vYX8/view?usp=sharing" target="_blank"  className="card-btn">Check it Out</a>
+                                        <a href="https://drive.google.com/file/d/1u5RNQrsdCJXro4IWuZoMT_uqckT5vYX8/view?usp=sharing" target="_blank" rel="noreferrer"  className="card-btn">Check it Out</a>
                                     </div>
                                 </article>
                             </div> 
@@ -198,7 +193,7 @@ const Home = () => {
                                     <div className="card-data">
                                         <h2 className="card-title">Internship</h2>
                                         <p className="card-description">Web Developer Intern at Vedobi (E-commerce)</p>
-                                        <a href="https://drive.google.com/file/d/18rT4TYej4E1qLuRwB9OHeBe0gNs7M_XY/view?usp=drive_link" target="_blank"  className="card-btn">Check it Out</a>
+                                        <a href="https://drive.google.com/file/d/18rT4TYej4E1qLuRwB9OHeBe0gNs7M_XY/view?usp=drive_link" target="_blank" rel="noreferrer"  className="card-btn">Check it Out</a>
                                     </div>
                                 </article>
                             </div>
@@ -214,7 +209,7 @@ const Home = () => {
 
                 {/* fourth section starts here */}
 
-                <Media_slider_carousel />
+                <MediaSliderCarousel />
 
                 {/* fourth section ends here */}
 

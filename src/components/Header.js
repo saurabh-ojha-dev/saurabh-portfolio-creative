@@ -1,25 +1,26 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <div>
-        {/* <!-- header starts here --> */}
-        <header>
-                <nav>
-                    <div className="left">Saurabh's Portfolio</div>
-                    <div className="right">
-                        <ul>
-                            <li> <a href="/">Home</a></li>
-                            <li> <a href="/about">About Us</a></li>
-                            <li> <a href="/projects">Projects</a></li>
-                            <li> <a href="/contactme">Contact Me</a></li>
-                        </ul>
-                    </div>
-                </nav>
+      {/* <!-- header starts here --> */}
+      <header>
+        <nav>
+          <div className="left">Saurabh's Portfolio</div>
+          <div className="right">
+            <ul>
+              <li> <Link className="navigation-button" to="/">         Home       </Link></li>
+              <li> <Link className="navigation-button" to="/about">    About Us   </Link></li>
+              <li> <Link className="navigation-button" to="/projects"> Projects   </Link></li>
+              <li> <Link className="navigation-button" to="/contactme">Contact Me </Link></li>
+            </ul>
+          </div>
+        </nav>
 
-            </header>
-            {/* <!-- header ends here --> */}
-      
+      </header>
+      {/* <!-- header ends here --> */}
+
     </div>
   )
 }

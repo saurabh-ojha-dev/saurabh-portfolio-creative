@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { ReactTyped } from "react-typed";
-
+import './Media_slider_carousel.css'; // Import your custom CSS for additional styling
+import Media_slider_carousel from './Media_slider_carousel';
+import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button } from 'react-bootstrap';
 
 const Home = () => {
 
@@ -83,14 +85,14 @@ const Home = () => {
                             and i am a passionate</div>
                         <div className='developer-title'>
                             <ReactTyped
-                                strings={['MERN Stack Developer', 'Reactjs- Frontend Developer', 'Nodejs- Backend Developer']}
+                                strings={['Full Stack Web Developer', 'Reactjs- Frontend Developer', 'Nodejs- Backend Developer']}
                                 typeSpeed={40}
                                 loop />
                             <br />
                         </div>
-                        <div className='button'>
-                            <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Download Resume</button>
-                            <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Github Link</button>
+                        <div className='button' style={{width:"103%"}}>
+                            <a href="https://drive.google.com/file/d/1yblUm99e04zSw6PpOiELJ-S8lreH-D4Z/view?usp=drive_link" target='_blank'>   <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Download Resume</button></a>
+                            <a href="https://drive.google.com/file/d/1ZuF8Kpp2_MVoTMoFzAo-CfwVcr1SRr3c/view?usp=drive_link" target='_blank' style={{ textDecoration: "none" }}>   <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Download Cover Letter</button></a>
                         </div>
                     </div>
                     <div className="rightSection"><img className="homejs-image" src={require("../assets/images/bg.png")} alt="Loading" /></div>
@@ -107,27 +109,115 @@ const Home = () => {
                     <div className="box">
                         <div className="vertical">
                             <img className="image-top " src={require("../assets/images/web.png")} alt="load" />
-                            <div className="vertical-title">Web Developer <div className='vertical-title-date'> (Jan 2023 - Feb 2023)</div></div>
-                            <div className="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ipsa! </div>
+                            <div className="vertical-title">Web Developer Intern<div className='vertical-title-date'> (Jan 2023 - Feb 2023)</div></div>
+                            <div className="vertical-desc"><a className='work-experience-link' href="https://www.thesparksfoundationsingapore.org/" target='_blank'>The Sparks Foundation</a> </div>
                         </div>
                         <div className="vertical">
                             <img className="image-top" src={require("../assets/images/web.png")} alt="load" />
-                            <div className="vertical-title">Php Developer <div className='vertical-title-date'> (Jan 2023 - Feb 2023)</div></div>
-                            <div className="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ipsa! </div>
+                            <div className="vertical-title">Web Developer Intern <div className='vertical-title-date'> (April 2023 - May 2023)</div></div>
+                            <div className="vertical-desc"><a className='work-experience-link' href="https://vedobi.com/" target='_blank' >Bestone Healthcare Products Private Limited </a> </div>
                         </div>
                         <div className="vertical">
                             <img className="image-top" src={require("../assets/images/web.png")} alt="load" />
-                            <div className="vertical-title">React Developer <div className='vertical-title-date'> (Jan 2023 - Feb 2023)</div></div>
-                            <div className="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ipsa! </div>
+                            <div className="vertical-title">Full Stack Web Developer <div className='vertical-title-date'> (june 2023 - Present)</div></div>
+                            <div className="vertical-desc"><a className='work-experience-link' href="https://vedobi.com/" target='_blank'>Vedobi (E-commerce) </a> </div>
                         </div>
-                        <div className="vertical">
+                        {/* <div className="vertical">
                             <img className="image-top" src={require("../assets/images/web.png")} alt="load" />
                             <div className="vertical-title">Mern Stack Developer<div className='vertical-title-date'>  (Jan 2023 - Feb 2023)</div></div>
                             <div className="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ipsa! </div>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
+
                 {/* <!-- second sections ends here --> */}
+
+                <hr />
+
+                {/* third section starts here */}
+
+                <div className="container">
+
+                    <h2 className='carousel-heading'>ACHIEVEMENTS AND CERTIFCATES</h2>
+
+                    <div className='container'>
+
+                        <div div className="row-achievemnts">
+
+                            <div className='column'>
+                                <article className="card">
+                                    <img src={require("../assets/images/main-award.jpg")} width={"250px"} height={"250px"} alt="" className="card-img" />
+                                    <div className="card-data">
+                                        <h2 className="card-title">Achievement</h2>
+                                        <p className="card-description"> Introduction To C Plus Plus By SkillUP
+                                        </p>
+                                        <a href="https://drive.google.com/file/d/1mO_PQrsnUYihcVqONsadwGsfOIAdwDqd/view?usp=drive_link" target="_blank" className="card-btn">Check it Out</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div className='column' style={{ display: "flex" }}>
+                                <article className="card">
+                                    <img src={require("../assets/images/main-award.jpg")} alt="" className="card-img" />
+                                    <div className="card-data">
+                                        <h2 className="card-title">Achievement</h2>
+                                        <p className="card-description"> Hack The Mountains 3.0 By Sudan's Tech</p>
+                                        <a href="https://drive.google.com/file/d/1DF-X-7quAkcAC0b8me32c-POI31eFLQD/view?usp=drive_link" target="_blank"  className="card-btn">Check it Out</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div className='column'>
+                                <article className="card">
+                                    <img src={require("../assets/images/main-award.jpg")} alt="" className="card-img" />
+                                    <div className="card-data">
+                                        <h2 className="card-title">Achievement</h2>
+                                        <p className="card-description">The MERN Stack By Mindluster</p>
+                                        <a href="https://drive.google.com/file/d/1xGoNkRyiMmvzxndY9CA8KF4xwFDmkZ2I/view?usp=drive_link" target="_blank"  className="card-btn">Check it Out</a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div className='row-achievemnts-second' >
+                            
+                            <div className='column'>
+                                <article className="card">
+                                    <img src={require("../assets/images/main-award.jpg")} alt="" className="card-img" />
+                                    <div className="card-data">
+                                        <h2 className="card-title">Internship</h2>
+                                        <p className="card-description">Web Developer Intern at The Sparks Foundation</p>
+                                        <a href="https://drive.google.com/file/d/1u5RNQrsdCJXro4IWuZoMT_uqckT5vYX8/view?usp=sharing" target="_blank"  className="card-btn">Check it Out</a>
+                                    </div>
+                                </article>
+                            </div> 
+                            
+                            <div className='column'>
+                                <article className="card">
+                                    <img src={require("../assets/images/main-award.jpg")} alt="" className="card-img" />
+                                    <div className="card-data">
+                                        <h2 className="card-title">Internship</h2>
+                                        <p className="card-description">Web Developer Intern at Vedobi (E-commerce)</p>
+                                        <a href="https://drive.google.com/file/d/18rT4TYej4E1qLuRwB9OHeBe0gNs7M_XY/view?usp=drive_link" target="_blank"  className="card-btn">Check it Out</a>
+                                    </div>
+                                </article>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                {/* third section ends here */}
+
+                <hr />
+
+                {/* fourth section starts here */}
+
+                <Media_slider_carousel />
+
+                {/* fourth section ends here */}
+
             </main>
             {/* <!-- main section ends here --> */}
         </>

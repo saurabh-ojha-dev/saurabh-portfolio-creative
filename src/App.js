@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import Aboutus from './components/Aboutus';
-import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Projects from './components/Projects';
 import Contactme from './components/Contactme';
 
@@ -12,14 +12,12 @@ function App() {
   return (
   <>
   <Header />
-    <Router>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<Aboutus />} />
         <Route path='/Projects' element={<Projects />} />
         <Route path='/contactme' element={<Contactme />} />
       </Routes>
-    </Router>
     <Footer />
     </>
   );

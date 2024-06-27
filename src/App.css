@@ -50,12 +50,12 @@ main hr {
 .left {
   font-size: 1.5rem;
 }
-@import url('https://fonts.googleapis.com/css?family=Courgette');
+@import url("https://fonts.googleapis.com/css?family=Courgette");
 canvas {
   position: absolute;
   top: 0;
   left: 0;
-  transform: initial;  
+  transform: initial;
   width: 100%;
   height: 100%;
   opacity: 0.2;
@@ -111,7 +111,7 @@ canvas {
 .secondSection {
   max-width: 80vw;
   margin: auto;
-  height: 80vh;
+  height: 50vh;
 }
 
 .secondSection h1 {
@@ -145,6 +145,7 @@ canvas {
   top: 25px;
   width: 150px;
   font-size: 14px;
+  color: white;
 }
 
 .vertical-desc {
@@ -349,4 +350,115 @@ canvas {
     color: rgb(170, 107, 228);
     width: 132vh;
   }
+}
+
+.navigation-button {
+  text-decoration: none;
+  list-style: none;
+  color: wheat;
+}
+
+.social-media-icons {
+  display: flex;
+}
+
+.social-media-icons-image {
+  border: 2px solid white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 100%;
+}
+.row-achievemnts {
+  padding-top: 100px;
+  display: flex;
+  overflow: auto;
+}
+.row-achievemnts-second {
+  display: flex;
+  padding-left: 260px;
+  padding-right: 260px;
+  padding-top: 100px;
+}
+.intro {
+  display: contents;
+  width: 100%;
+}
+.subtitle.is-size-5-desktop.has-text-weight-normal {
+  font-family: "Poppins", sans-serif;
+}
+
+.work-experience-link {
+  text-decoration: none;
+  color: wheat;
+}
+
+.contact-me-subscribe {
+  padding: 20px;
+  width: 50%;
+  margin: 50px;
+  border-radius: 40px;
+  border: 4px solid #30ce43;
+}
+
+.contact-me-button {
+  width: 14%;
+  padding: 20px;
+  margin: 50px;
+  padding-left: 10px;
+  margin-left: -150px;
+  border-radius: 40px;
+  border: 4px solid #30ce43;
+  background-color: #30ce43;
+}
+.contact-me-button:hover {
+  background-color: darkgreen;
+}
+
+.contact-me-button :visited {
+  background-color: rgb(124, 176, 199);
+}
+
+.col-contact-me-leftSide {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.col-contact-me-button {
+  width: 40%;
+  padding: 10px;
+  margin: 10px;
+  background-color:  #30ce43;
+  border-radius: 30px;
+}
+
+#textarea-border {
+  border-top: 2px solid black;
+  border-left: 2px solid;
+}
+
+#iframe {
+  font-size: 50px;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+.container .row {
+}
+#contact-information {
+  padding: 0px !important;
+}
+#contact-information-text {
+  /* padding: 0px !important;
+  margin: 0px !important; */
+  color: darkred;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.fa-solid.fa-house {
+  font-size: 45px !important;
+}
+.heading-contact-me {
+  color: black;
 }

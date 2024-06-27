@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
     return (
         <>
@@ -7,17 +9,30 @@ const Footer = () => {
                     <h3>Saurabh's Developer Portfolio</h3>
                 </div>
                 <div className="footer-second">
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>services</li>
-                        <li>contact us</li>
+                    <ul className="footer-sections">
+                        <li> <Link className="navigation-button" to="/">         Home       </Link></li>
+                        <li> <Link className="navigation-button" to="/about">    About Us   </Link></li>
+                        <li> <Link className="navigation-button" to="/projects"> Projects   </Link></li>
+                        <li> <Link className="navigation-button" to="/contactme">Contact Me </Link></li>
                     </ul>
                 </div>
-                <div className="footer-third"></div>
+                <div className="footer-third">
+                        <ul className="social-media-icons">
+                            <li><Link target="_blank" to="https://www.facebook.com/saurabhojhaa/"> <img className="social-media-icons-image" src={require("../assets/images/social media icons/5296500_fb_social media_facebook_facebook logo_social network_icon.png")} height={"50px"} width={"50px"} alt="Facebook" /></Link></li>
+                            <li><Link target="_blank" to="https://www.linkedin.com/in/saurabh-ojha-14598912b/"> <img className="social-media-icons-image" src={require("../assets/images/social media icons/5296501_linkedin_network_linkedin logo_icon.png")} height={"50px"} width={"50px"} alt="Linkdin"  /> </Link></li>
+                            <li><Link target="_blank" to="https://twitter.com/saurabh28745675"> <img className="social-media-icons-image" src={require("../assets/images//social media icons/twitter.png")} height={"50px"} width={"50px"} alt="Twitter" /> </Link></li>
+                            <li><Link target="_blank" to="https://wa.me/7289976469"> <img className="social-media-icons-image" src={require("../assets/images/social media icons/5296520_bubble_chat_mobile_whatsapp_whatsapp logo_icon.png")} height={"50px"} width={"50px"} alt="Whatsapp" /> </Link></li>
+                            <li><Link target="_blank" to="https://www.youtube.com/channel/UCmTiSGOIq7-IdlnGGU46e1A"> <img className="social-media-icons-image" src={require("../assets/images/social media icons/5296521_play_video_vlog_youtube_youtube logo_icon.png")} height={"50px"} width={"50px"} alt="Youtube" /> </Link></li>
+                            <li><Link target="_blank" to="https://www.instagram.com/saurabh__ojha__12/"> <img className="social-media-icons-image" src={require("../assets/images/social media icons/5296765_camera_instagram_instagram logo_icon.png")} height={"50px"} width={"50px"} alt="Instagram" /> </Link></li>
+                            <li><Link target="_blank" to="https://github.com/Saurabh-ojha-2000"> <img className="social-media-icons-image" src={require("../assets/images/social media icons/github.png")} height={"50px"} width={"50px"} alt="Github" /> </Link></li>
+                            <li><Link target="_blank" to="https://t.me/Saurabh_ojha_developer"> <img className="social-media-icons-image" src={require("../assets/images/social media icons/986956_telegram_icon.png")} height={"50px"} width={"50px"} alt="Telegram" /> </Link></li>
+                            <li><Link target="_blank" to="mailto:sourabhojha12@gmail.com"> <img className="social-media-icons-image" src={require("../assets/images/social media icons/3377042_gmail_logo_media_social_icon.png")} height={"50px"} width={"50px"} alt="gmail" /> </Link></li>
+                            <li><Link target="_blank" to="https://www.snapchat.com/add/saurabh_ojh3075?share_id=kDnL8lD9nL4&locale=en-IN"> <img className="social-media-icons-image" src={require("../assets/images/social media icons/4362957_snapchat_logo_social media_icon.png")} height={"50px"} width={"50px"} alt="Snapchat" /> </Link></li>
+                        </ul>
+                </div>
                 <div className="footer-fourth"></div>
             </div>
-            <div className="footer-rights">Copyright &#169; www.saurabhportfolio.com | All rights reserved</div>
+            <div className="footer-rights">Copyright &#169; saurabh-portfolio-creative| All rights reserved</div>
         </>
     )
 }

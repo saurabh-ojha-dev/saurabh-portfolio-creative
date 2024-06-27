@@ -1,47 +1,87 @@
 import React from 'react'
-import "../assets/css/projects.css"
+import "../assets/css/projects.css";
+import Media_slider_carousel from './Media_slider_carousel';
+
 
 const Projects = () => {
     return (
-        <div className='main-project-section'>
-            <div className='container'>
-                <div className='row'>
-                    <div className='column'>
-                        <article className="card">
-                            <img src={require("../assets/images/ts.webp")} width={"250px"} height={"250px"} alt="" className="card-img" />
-                            <div className="card-data">
-                                <h2 className="card-title">Thread Solutions</h2>
-                                <p className="card-description">
-                                    A dynamic PHP website, offers seamless thread management. Enhancing collaboration and organization, it simplifies discussions with its user-friendly interface.
-                                </p>
-                                <a href="http://threadsolutions.infinityfreeapp.com/" target="_blank" className="card-btn">Check it Out</a>
-                            </div>
-                        </article>
-                    </div>
-                    <div className='column'>
-                        <article className="card">
-                            <img src={require("../assets/images/blogs.webp")} alt="" className="card-img" />
-                            <div className="card-data">
-                                <h2 className="card-title">Blogs</h2>
-                                <p className="card-description">
-                                    A dynamic space where diverse voices share insights, experiences, and knowledge. Explore engaging content, discover new perspectives, and stay informed in a digital community.</p>
-                                <a href="#" className="card-btn">Check it Out</a>
-                            </div>
-                        </article>
-                    </div>
-                    <div className='column'>
-                        <article className="card">
-                            <img src={require("../assets/images/webnews1.png")} alt="" className="card-img" />
-                            <div className="card-data">
-                                <h2 className="card-title">WebNews</h2>
-                                <p className="card-description"> A dynamic React application delivering real-time news updates with a sleek user interface. Stay informed and engaged with personalized content in a seamless browsing experience.</p>
-                                <a href="#" className="card-btn">Check it Out</a>
-                            </div>
-                        </article>
+        <>
+            <div className='main-project-section'>
+                <div className='container'>
+                    <div className='row-achievemnts'>
+                        <div className='column'>
+                            <article className="card">
+                                <img src={require("../assets/images/ts.webp")} width={"250px"} height={"250px"} alt="" className="card-img" />
+                                <div className="card-data">
+                                    <h2 className="card-title">Thread Solutions</h2>
+                                    <p className="card-description">
+                                        A dynamic PHP website, offers seamless thread management. Enhancing collaboration and organization, it simplifies discussions with its user-friendly interface.
+                                    </p>
+                                    <a href="http://threadsolutions.infinityfreeapp.com/" target="_blank" className="card-btn">Check it Out</a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div className='column'>
+                            <article className="card">
+                                <img src={require("../assets/images/webnews1.png")} alt="" className="card-img" />
+                                <div className="card-data">
+                                    <h2 className="card-title">WebNews</h2>
+                                    <p className="card-description"> A dynamic React application delivering real-time news updates and stay informed and engaged with personalized content in a seamless browsing experience.</p>
+                                    <a href="https://github.com/Saurabh-ojha-2000/WebNews" target='_blank' className="card-btn">Check it Out</a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div className='column'>
+                            <article className="card">
+                                <img src={require("../assets/images/Workrise.png")} alt="" className="card-img" />
+                                <div className="card-data">
+                                    <h2 className="card-title">WorkRise</h2>
+                                    <p className="card-description">
+                                        Workrise is an innovative platform that connects freelancers with clients seeking a wide range of services, from design to consulting in the gig economy.
+                                    </p>
+                                    <a href="https://work-rise.vercel.app/" target='_blank' className="card-btn">Check it Out</a>
+                                </div>
+                            </article>
+                        </div>
+                        </div>
+
+                        <div className='row-achievemnts-second'>
+                        
+                        <div className='column'>
+                            <article className="card">
+                                <img src={require("../assets/images/crm panel.png")} alt="" className="card-img" />
+                                <div className="card-data">
+                                    <h2 className="card-title">CRM Panel</h2>
+                                    <p className="card-description">
+                                        The Comprehensive Customer CRM Panel is an advanced system for managing customer interactions, orders, and feedback to enhance efficiency and customer satisfaction.</p>
+                                    <a href="https://github.com/Saurabh-ojha-2000/Admin-Panel" target="_blank" className="card-btn">Check it Out</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div className='column'>
+                            <article className="card">
+                                <img src={require("../assets/images/graph.png")} alt="" className="card-img" />
+                                <div className="card-data">
+                                    <h2 className="card-title">Visualization Dashboard</h2>
+                                    <p className="card-description">
+                                    A dynamic dashboard for visualizing key metrics through interactive graphs, enhancing data-driven decision-making & performance tracking.</p>
+                                    <a href="https://github.com/Saurabh-ojha-2000/Graphs-Visualization-Dashboard" target='_blank' className="card-btn">Check it Out</a>
+                                </div>
+                            </article>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </div>
+            <br />
+            <br />
+            <br />
+
+            <Media_slider_carousel />
+        </>
+
     )
 }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import avatarImage from '../assets/images/mf-avatar.svg';
 import herodevices from '../assets/images/hero-devices.svg';
+import './Media_slider_carousel.css'; // Import your custom CSS for additional styling
 import "../assets/css/aboutus.css";
 
 const Aboutus = () => {
@@ -24,11 +25,20 @@ const Aboutus = () => {
                     </div>
                 </section>
                 <section className="section is-medium is-primary has-text-centered is-long">
-                    <div className="container">
+                    <div className="container intro">
                         <div className="columns is-centered">
                             <div className="column is-three-fifths">
                                 <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">Hi, I’m Saurabh. Nice to meet you.</h1>
-                                <h2 className="subtitle is-size-5-desktop has-text-weight-normal">Since beginning my journey as a Full Stack Developer 2 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops.</h2>
+                                <h2 className="subtitle is-size-5-desktop has-text-weight-normal">Since i began my journey as a Full Stack Web Developer 2 years   ago, I have honed my skills as a Full Stack Web Developer, working on a diverse
+                                    range of projects that have equipped me with the experience and knowledge needed to excel in this
+                                    role. My experience spans front-end and back-end development, responsive design, and user
+                                    experience optimization. I have a deep understanding of web technologies, including HTML5, CSS3,
+                                    JavaScript, ReactJs, NodeJS, Express.js, Mondodb , Mysql, Php, PhpMyadmin and various web
+                                    frameworks , APIs and libraries and have collaborated with talented people to create digital products for both business and consumer use. I'm quiet confident, naturally curious, and perpetually working on improving my chops.
+                                    <br /><br />I have a proven track record of collaborating effectively in cross-functional teams to deliver high quality web applications. I take pride in my ability to translate complex business requirements into
+                                    efficient and user-friendly web solutions. My attention to detail, problem-solving skills, and
+                                    commitment to staying current with industry trends make me a valuable asset to any development
+                                    team.</h2>
                             </div>
                         </div>
                     </div>
@@ -38,7 +48,7 @@ const Aboutus = () => {
                         <div className="box">
                             <div className="content">
                                 <div className="columns is-centered">
-                                    <div className="column"><span className="fa-stack fa-2x"><img className='is-bottom' src={require("../assets/images/frontend.png")} alt="" oops /> </span>
+                                    <div className="column"><div><img className='is-bottom' src={require("../assets/images/frontend.png")} alt="" oops /> </div>
                                         <h1 className="title is-size-4 is-spaced">Frontend Developer</h1>
                                         <p>I like to code things from scratch with extensive experience in building single-page applications (SPAs), and enjoy bringing ideas to life in the browser.</p>
                                         <p className="list-title">Languages I speak:</p>
@@ -56,7 +66,7 @@ const Aboutus = () => {
                                             <li>Netlify | Render | Hostinger </li>
                                         </ul>
                                     </div>
-                                    <div className="column"><span className="fa-stack fa-2x"><img className='is-bottom' src={require("../assets/images/database.png")} alt="" oops /></span>
+                                    <div className="column"><div><img className='is-bottom' src={require("../assets/images/database.png")} alt="" oops /></div>
                                         <h1 className="title is-size-4 is-spaced">Database Developer</h1>
                                         <p>Write and optimize SQL queries to ensure efficient data retrieval and
                                             analyze and improve database performance through indexing and other optimization techniques</p>
@@ -69,7 +79,7 @@ const Aboutus = () => {
                                             <li>PostGresql</li>
                                         </ul>
                                     </div>
-                                    <div className="column"><span className="fa-stack fa-2x"><img className='is-bottom' src={require("../assets/images/backend.png")} alt="" oops /> </span>
+                                    <div className="column"><div><img className='is-bottom' src={require("../assets/images/backend.png")} alt="" oops /> </div>
                                         <h1 className="title is-size-4 is-spaced">Backend Developer</h1>
                                         <p>Develop server-side logic using backend tecnologies Implement RESTful APIs for communication between the frontend and backend components.</p>
                                         <p className="list-title">Languages I speak:    </p>

@@ -30,7 +30,6 @@ const Footer = () => {
                             <li><Link target="_blank"  rel="noreferrer" to="https://www.snapchat.com/add/saurabh_ojh3075?share_id=kDnL8lD9nL4&locale=en-IN"> <img className="social-media-icons-image" src={require("../assets/images/social media icons/4362957_snapchat_logo_social media_icon.png")} height={"50px"} width={"50px"} alt="Snapchat" /> </Link></li>
                         </ul>
                 </div>
-                <div className="footer-fourth"></div>
             </div>
             <div className="footer-rights">Copyright &#169; saurabh-portfolio-creative| All rights reserved</div>
         </>

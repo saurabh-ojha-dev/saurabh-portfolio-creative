@@ -11,7 +11,7 @@ function Header() {
           <div className="right">
             <ul>
               <li> <Link className="navigation-button" to="/">         Home       </Link></li>
-              <li> <Link className="navigation-button" to="/about">    About Us   </Link></li>
+              <li> <Link className="navigation-button" to="/about">    About</Link></li>
               <li> <Link className="navigation-button" to="/projects"> Projects   </Link></li>
               <li> <Link className="navigation-button" to="/contactme">Contact Me </Link></li>
             </ul>

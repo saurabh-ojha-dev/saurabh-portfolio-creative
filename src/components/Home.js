@@ -81,7 +81,7 @@ const Home = () => {
                     <div className="leftSection">
                         <div className='name-title'> Hi, My name is
                             <span className="purple"> Saurabh </span>
-                            and i am a passionate</div>
+                            and I am a passionate</div>
                         <div className='developer-title'>
                             <ReactTyped
                                 strings={['Full Stack Web Developer', 'Reactjs- Frontend Developer', 'Nodejs- Backend Developer']}
@@ -89,7 +89,7 @@ const Home = () => {
                                 loop />
                             <br />
                         </div>
-                        <div className='button' style={{width:"103%"}}>
+                        <div className='button' style={{ width: "103%" }}>
                             <a href="https://drive.google.com/file/d/1q1WMhpg06MW0AGUX4htlLAoBGsPeeJM5/view?usp=drive_link" target='_blank' rel="noreferrer">   <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Download Resume</button></a>
                             <a href="https://drive.google.com/file/d/1UiVjfRTPxJgljfuQOJZS3fyua8jQgP4G/view?usp=drive_link" target='_blank' rel="noreferrer" style={{ textDecoration: "none" }}>   <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Download Cover Letter</button></a>
                         </div>
@@ -104,7 +104,7 @@ const Home = () => {
 
                 <section className="secondSection">
                     <span className="text-gray">What I have done so far</span>
-                    <h1>Work Experince</h1><br />
+                    <h1>Work Experience</h1><br />
                     <div className="box">
                         <div className="vertical">
                             <img className="image-top " src={require("../assets/images/web.png")} alt="load" />
@@ -119,9 +119,9 @@ const Home = () => {
                         <div className="vertical">
                             <img className="image-top" src={require("../assets/images/web.png")} alt="load" />
                             <div className="vertical-title">Full Stack Web Developer <div className='vertical-title-date'> (june 2023 - Present)</div></div>
-                            <div className="vertical-desc"><a className='work-experience-link' href="https://vedobi.com/" target='_blank'rel="noreferrer">Vedobi (E-commerce) </a> </div>
+                            <div className="vertical-desc"><a className='work-experience-link' href="https://vedobi.com/" target='_blank' rel="noreferrer">Vedobi (E-commerce) </a> </div>
                         </div>
-                       
+
                     </div>
                 </section>
 
@@ -130,90 +130,90 @@ const Home = () => {
                 <hr />
 
                 {/* third section starts here */}
+                <section className="thirdSection">
+                    <div className="container">
 
-                <div className="container">
+                        <h2 className='carousel-heading'>ACHIEVEMENTS AND CERTIFCATES</h2>
 
-                    <h2 className='carousel-heading'>ACHIEVEMENTS AND CERTIFCATES</h2>
+                        <div className='container'>
 
-                    <div className='container'>
+                            <div div className="row-achievemnts">
 
-                        <div div className="row-achievemnts">
+                                <div className='column'>
+                                    <article className="card">
+                                        <img src={require("../assets/images/main-award.jpg")} width={"250px"} height={"250px"} alt="" className="card-img" />
+                                        <div className="card-data">
+                                            <h2 className="card-title">Achievement</h2>
+                                            <p className="card-description"> Introduction To C Plus Plus By SkillUP
+                                            </p>
+                                            <a href="https://drive.google.com/file/d/1mO_PQrsnUYihcVqONsadwGsfOIAdwDqd/view?usp=drive_link" target="_blank" rel="noreferrer" className="card-btn">Check it Out</a>
+                                        </div>
+                                    </article>
+                                </div>
 
-                            <div className='column'>
-                                <article className="card">
-                                    <img src={require("../assets/images/main-award.jpg")} width={"250px"} height={"250px"} alt="" className="card-img" />
-                                    <div className="card-data">
-                                        <h2 className="card-title">Achievement</h2>
-                                        <p className="card-description"> Introduction To C Plus Plus By SkillUP
-                                        </p>
-                                        <a href="https://drive.google.com/file/d/1mO_PQrsnUYihcVqONsadwGsfOIAdwDqd/view?usp=drive_link" target="_blank" rel="noreferrer" className="card-btn">Check it Out</a>
-                                    </div>
-                                </article>
+                                <div className='column' style={{ display: "flex" }}>
+                                    <article className="card">
+                                        <img src={require("../assets/images/main-award.jpg")} alt="" className="card-img" />
+                                        <div className="card-data">
+                                            <h2 className="card-title">Achievement</h2>
+                                            <p className="card-description"> Hack The Mountains 3.0 By Sudan's Tech</p>
+                                            <a href="https://drive.google.com/file/d/1DF-X-7quAkcAC0b8me32c-POI31eFLQD/view?usp=drive_link" target="_blank" rel="noreferrer" className="card-btn">Check it Out</a>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div className='column'>
+                                    <article className="card">
+                                        <img src={require("../assets/images/main-award.jpg")} alt="" className="card-img" />
+                                        <div className="card-data">
+                                            <h2 className="card-title">Achievement</h2>
+                                            <p className="card-description">The MERN Stack By Mindluster</p>
+                                            <a href="https://drive.google.com/file/d/1xGoNkRyiMmvzxndY9CA8KF4xwFDmkZ2I/view?usp=drive_link" target="_blank" rel="noreferrer" className="card-btn">Check it Out</a>
+                                        </div>
+                                    </article>
+                                </div>
                             </div>
 
-                            <div className='column' style={{ display: "flex" }}>
-                                <article className="card">
-                                    <img src={require("../assets/images/main-award.jpg")} alt="" className="card-img" />
-                                    <div className="card-data">
-                                        <h2 className="card-title">Achievement</h2>
-                                        <p className="card-description"> Hack The Mountains 3.0 By Sudan's Tech</p>
-                                        <a href="https://drive.google.com/file/d/1DF-X-7quAkcAC0b8me32c-POI31eFLQD/view?usp=drive_link" target="_blank" rel="noreferrer"  className="card-btn">Check it Out</a>
-                                    </div>
-                                </article>
-                            </div>
+                            <div className='row-achievemnts-second' >
 
-                            <div className='column'>
-                                <article className="card">
-                                    <img src={require("../assets/images/main-award.jpg")} alt="" className="card-img" />
-                                    <div className="card-data">
-                                        <h2 className="card-title">Achievement</h2>
-                                        <p className="card-description">The MERN Stack By Mindluster</p>
-                                        <a href="https://drive.google.com/file/d/1xGoNkRyiMmvzxndY9CA8KF4xwFDmkZ2I/view?usp=drive_link" target="_blank" rel="noreferrer"  className="card-btn">Check it Out</a>
-                                    </div>
-                                </article>
+                                <div className='column'>
+                                    <article className="card">
+                                        <img src={require("../assets/images/main-award.jpg")} alt="" className="card-img" />
+                                        <div className="card-data">
+                                            <h2 className="card-title">Internship</h2>
+                                            <p className="card-description">Web Developer Intern at The Sparks Foundation</p>
+                                            <a href="https://drive.google.com/file/d/1u5RNQrsdCJXro4IWuZoMT_uqckT5vYX8/view?usp=sharing" target="_blank" rel="noreferrer" className="card-btn">Check it Out</a>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div className='column'>
+                                    <article className="card">
+                                        <img src={require("../assets/images/main-award.jpg")} alt="" className="card-img" />
+                                        <div className="card-data">
+                                            <h2 className="card-title">Internship</h2>
+                                            <p className="card-description">Web Developer Intern at Vedobi (E-commerce)</p>
+                                            <a href="https://drive.google.com/file/d/18rT4TYej4E1qLuRwB9OHeBe0gNs7M_XY/view?usp=drive_link" target="_blank" rel="noreferrer" className="card-btn">Check it Out</a>
+                                        </div>
+                                    </article>
+                                </div>
+
                             </div>
                         </div>
 
-                        <div className='row-achievemnts-second' >
-                            
-                            <div className='column'>
-                                <article className="card">
-                                    <img src={require("../assets/images/main-award.jpg")} alt="" className="card-img" />
-                                    <div className="card-data">
-                                        <h2 className="card-title">Internship</h2>
-                                        <p className="card-description">Web Developer Intern at The Sparks Foundation</p>
-                                        <a href="https://drive.google.com/file/d/1u5RNQrsdCJXro4IWuZoMT_uqckT5vYX8/view?usp=sharing" target="_blank" rel="noreferrer"  className="card-btn">Check it Out</a>
-                                    </div>
-                                </article>
-                            </div> 
-                            
-                            <div className='column'>
-                                <article className="card">
-                                    <img src={require("../assets/images/main-award.jpg")} alt="" className="card-img" />
-                                    <div className="card-data">
-                                        <h2 className="card-title">Internship</h2>
-                                        <p className="card-description">Web Developer Intern at Vedobi (E-commerce)</p>
-                                        <a href="https://drive.google.com/file/d/18rT4TYej4E1qLuRwB9OHeBe0gNs7M_XY/view?usp=drive_link" target="_blank" rel="noreferrer"  className="card-btn">Check it Out</a>
-                                    </div>
-                                </article>
-                            </div>
-
-                        </div>
                     </div>
-
-                </div>
-
+                </section>
                 {/* third section ends here */}
 
                 <hr />
 
                 {/* fourth section starts here */}
-
-                <MediaSliderCarousel />
-
+                <section className="fourthSection">
+                    <MediaSliderCarousel />
+                </section>
                 {/* fourth section ends here */}
 
-            </main>
+            </main >
             {/* <!-- main section ends here --> */}
         </>
     )

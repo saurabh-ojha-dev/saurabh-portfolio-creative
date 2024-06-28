@@ -270,7 +270,7 @@ canvas {
   );
 }
 
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
   body {
     min-width: fit-content;
   }
@@ -315,7 +315,6 @@ canvas {
   }
 
   .leftSection {
-    width: 100% !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -348,9 +347,9 @@ canvas {
     display: flex;
     justify-content: center;
     color: rgb(170, 107, 228);
-    width: 132vh;
+    width: 30vh;
   }
-}
+} */
 
 .navigation-button {
   text-decoration: none;
@@ -458,4 +457,126 @@ canvas {
 }
 .heading-contact-me {
   color: black;
+}
+/* 
+@media (max-width: 768px) {
+  .name-title {
+    font-size: 1.5rem;
+  }
+
+  .developer-title {
+    font-size: 1.2rem;
+  }
+
+  .button button {
+    font-size: 0.9rem;
+  }
+
+  .carousel-heading {
+    font-size: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+  }
+
+  .card-btn {
+    font-size: 0.9rem;
+  }
+} */
+
+/* @media (max-width: 480px) {
+  .name-title {
+    font-size: 1.2rem;
+  }
+
+  .developer-title {
+    font-size: 1rem;
+  }
+
+  .button button {
+    font-size: 0.8rem;
+  }
+
+  .carousel-heading {
+    font-size: 1.2rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-description {
+    font-size: 0.8rem;
+  }
+
+  .card-btn {
+    font-size: 0.8rem;
+  }
+
+  .canvas {
+    display: block;
+  }
+} */
+ 
+ /* Responsive css starts here */
+
+@media screen and (max-width: 800px) {
+
+  div {
+    display: block;
+  }
+  nav {
+    display: inline-block;
+  }
+
+  .firstSection {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    z-index: 0;
+    position: relative;
+    background-attachment: #fff;
+    overflow: none;
+  }
+
+  .secondSection {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    height: 0vh;
+  }
+
+  .leftSection{
+    width: 0%;
+  }
+  .social-media-icons {
+    display: block;
+}
+  
+  .row-achievemnts {
+    display: block;
+}
+  
+ 
+.row-achievemnts-second {
+  display: block;
+}
+.row-achievemnts-second {
+   padding-left: 0px; 
+   padding-right: 0px; 
+   padding-top: 0px; 
+}
+
+.footer > div {
+  width: 0px;
+}
+
+
+
 }

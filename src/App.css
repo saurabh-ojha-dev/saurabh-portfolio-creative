@@ -432,7 +432,7 @@ span.contact-me-heading-green {
     font-size: 1.5rem;
     text-align: center;
     position: relative;
-    left: -80px;
+    left: -40px;
   }
 
   .firstSection {
@@ -509,10 +509,10 @@ span.contact-me-heading-green {
   }
   .name-title {
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .developer-title {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   button#gb10 {
     font-size: xx-small;
@@ -538,7 +538,7 @@ span.contact-me-heading-green {
   .row-achievemnts {
     display: block;
     overflow: visible;
-    padding-top: 40%;
+    padding-top: 50%;
   }
 
   .row-achievemnts-second {
@@ -626,9 +626,6 @@ span.contact-me-heading-green {
     max-width: 100px;
     padding: 0px;
   }
-  .ci-row {
-    /* width: 0%;    */
-  }
 
   #contact-information-text {
     margin-top: 8px;
@@ -636,6 +633,10 @@ span.contact-me-heading-green {
 
   div#contact-information {
     justify-content: normal;
+  }
+
+  .vertical-title-date {
+    width: auto;
   }
 
 }
@@ -650,4 +651,15 @@ span.contact-me-heading-green {
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+}
+
+
+@media (max-width: 480px) {
+  /* .column.thirdSection-column  {
+    margin-left: 0px !important;
+}
+.column.is-three-fifths  {
+  margin-left: 0px !important;
+} */
+
 }

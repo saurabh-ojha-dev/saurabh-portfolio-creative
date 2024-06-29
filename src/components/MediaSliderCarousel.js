@@ -34,13 +34,13 @@ const MediaSliderCarousel = () => {
         { id: 7, image: cssImage7, caption: 'Slide 7' },
         { id: 8, image: cssImage8, caption: 'Slide 8' },
         { id: 9, image: cssImage9, caption: 'Slide 9' },
-        { id: 10, image: cssImage10, caption: 'Slide 10'},
-        { id: 11, image: cssImage11, caption: 'Slide 11'},
-        { id: 12, image: cssImage12, caption: 'Slide 12'},
-        { id: 13, image: cssImage13, caption: 'Slide 13'},
-        { id: 14, image: cssImage14, caption: 'Slide 14'},
-        { id: 15, image: cssImage15, caption: 'Slide 15'},
-        { id: 15, image: cssImage16, caption: 'Slide 16'},
+        { id: 10, image: cssImage10, caption: 'Slide 10' },
+        { id: 11, image: cssImage11, caption: 'Slide 11' },
+        { id: 12, image: cssImage12, caption: 'Slide 12' },
+        { id: 13, image: cssImage13, caption: 'Slide 13' },
+        { id: 14, image: cssImage14, caption: 'Slide 14' },
+        { id: 15, image: cssImage15, caption: 'Slide 15' },
+        { id: 15, image: cssImage16, caption: 'Slide 16' },
 
     ];
 
@@ -49,9 +49,7 @@ const MediaSliderCarousel = () => {
 
     return (
         <div className="container">
-            {/* <div className="row-header"> */}
-                <h2 className='carousel-heading'>TECHNOLOGIES</h2>
-            {/* </div> */}
+            <h2 className='carousel-heading'>TECHNOLOGIES</h2>
             <div className="row media-carousel-mobile">
                 <div className="col-md-12">
                     <Carousel activeIndex={activeIndex} onSelect={(index) => setActiveIndex(index)} id="media">
@@ -61,7 +59,7 @@ const MediaSliderCarousel = () => {
                                     {carouselItems.slice(slideIndex * 4, slideIndex * 4 + 4).map((innerItem) => (
                                         <div className="col-md-2" key={innerItem.id}>
                                             {/* <a className="thumbnail" href="/"> */}
-                                                <img src={innerItem.image} alt={`Slide ${innerItem.id}`} />
+                                            <img src={innerItem.image} alt={`Slide ${innerItem.id}`} />
                                             {/* </a> */}
                                         </div>
                                     ))}

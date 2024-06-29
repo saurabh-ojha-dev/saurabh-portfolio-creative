@@ -145,11 +145,11 @@ const Aboutus = () => {
                         <div className="columns is-centered">
                             <div className="column is-three-fifths">
                                 <h1 className="title is-spaced is-size-3-desktop is-size-4-mobile">Hi, I’m Saurabh. Nice to meet you.</h1>
-                                <h2 className="subtitle is-size-5-desktop has-text-weight-normal">
+                                <p className="subtitle is-size-5-desktop has-text-weight-normal">
                                     Since I began my journey as a Full Stack Web Developer 2 years ago, I have honed my skills as a Full Stack Web Developer, working on a diverse range of projects that have equipped me with the experience and knowledge needed to excel in this role. My experience spans front-end and back-end development, responsive design, and user experience optimization. I have a deep understanding of web technologies, including HTML5, CSS3, JavaScript, ReactJs, NodeJS, Express.js, MongoDB, MySQL, PHP, PhpMyAdmin and various web frameworks, APIs, and libraries. I have collaborated with talented people to create digital products for both business and consumer use. I'm quiet confident, naturally curious, and perpetually working on improving my chops.
                                     <br /><br />
                                     I have a proven track record of collaborating effectively in cross-functional teams to deliver high-quality web applications. I take pride in my ability to translate complex business requirements into efficient and user-friendly web solutions. My attention to detail, problem-solving skills, and commitment to staying current with industry trends make me a valuable asset to any development team.
-                                </h2>
+                                </p>
                             </div>
                         </div>
                     </div>

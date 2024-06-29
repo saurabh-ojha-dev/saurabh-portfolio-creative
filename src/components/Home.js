@@ -82,7 +82,8 @@ const Home = () => {
                     <div className="leftSection">
                         <div className='name-title'> Hi, My name is
                             <span className="purple"> Saurabh </span>
-                            and I am a passionate</div>
+                            and I am a passionate
+                        </div>                        
                         <div className='developer-title'>
                             <ReactTyped
                                 strings={['Full Stack Web Developer', 'Reactjs- Frontend Developer', 'Nodejs- Backend Developer']}
@@ -90,7 +91,7 @@ const Home = () => {
                                 loop />
                             <br />
                         </div>
-                        <div className='button' style={{textAlign:"center" }}>
+                        <div className='button' style={{ textAlign: "center" }}>
                             <a href="https://drive.google.com/file/d/1q1WMhpg06MW0AGUX4htlLAoBGsPeeJM5/view?usp=drive_link" target='_blank' rel="noreferrer">   <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Download Resume</button></a>
                             <a href="https://drive.google.com/file/d/1UiVjfRTPxJgljfuQOJZS3fyua8jQgP4G/view?usp=drive_link" target='_blank' rel="noreferrer" style={{ textDecoration: "none" }}>   <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Download Cover Letter</button></a>
                         </div>
@@ -100,12 +101,12 @@ const Home = () => {
                 </section>
                 {/* <!-- First sections ends here --> */}
 
-            
+
                 {/* <!-- second sections start here --> */}
 
                 <section className="secondSection">
                     <span className="text-gray">What I have done so far</span>
-                    <h1>Work Experience</h1><br className='second-section-br'/>
+                    <h1>Work Experience</h1><br className='second-section-br' />
                     <div className="box secondSection">
                         <div className="vertical">
                             <img className="image-top " src={require("../assets/images/web.png")} alt="load" />
@@ -128,7 +129,7 @@ const Home = () => {
 
                 {/* <!-- second sections ends here --> */}
 
-             
+
 
                 {/* third section starts here */}
                 <section className="thirdSection">
@@ -152,7 +153,7 @@ const Home = () => {
                                     </article>
                                 </div>
 
-                                <div className='column thirdSection-column' style={{ display: "flex" }}>
+                                <div className='column thirdSection-column'>
                                     <article className="card">
                                         <img src={require("../assets/images/main-award.jpg")} alt="" className="card-img" />
                                         <div className="card-data">
@@ -177,7 +178,7 @@ const Home = () => {
 
                             <div className='row-achievemnts-second' >
 
-                                <div className='column'>
+                                <div className='column thirdSection-column'>
                                     <article className="card">
                                         <img src={require("../assets/images/main-award.jpg")} alt="" className="card-img" />
                                         <div className="card-data">
@@ -188,7 +189,7 @@ const Home = () => {
                                     </article>
                                 </div>
 
-                                <div className='column'>
+                                <div className='column thirdSection-column'>
                                     <article className="card">
                                         <img src={require("../assets/images/main-award.jpg")} alt="" className="card-img" />
                                         <div className="card-data">
@@ -206,7 +207,7 @@ const Home = () => {
                 </section>
                 {/* third section ends here */}
 
-              
+
 
                 {/* fourth section starts here */}
                 <section className="fourthSection">

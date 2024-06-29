@@ -75,9 +75,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <br />
-            <br />
-            <br />
+          
 
             <MediaSliderCarousel />
         </>

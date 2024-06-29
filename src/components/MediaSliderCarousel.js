@@ -4,7 +4,7 @@ import './Media_slider_carousel.css'; // Import your custom CSS for additional s
 
 // Import your images
 import cssImage1 from '../assets/images/technologies/css.png';
-import cssImage2 from '../assets/images/technologies/expressjs.png';
+// import cssImage2 from '../assets/images/technologies/expressjs.png';
 import cssImage3 from '../assets/images/technologies/s.png';
 import cssImage4 from '../assets/images/technologies/mongo-db.png';
 import cssImage5 from '../assets/images/technologies/mysql.png';
@@ -26,7 +26,7 @@ const MediaSliderCarousel = () => {
 
     const carouselItems = [
         { id: 1, image: cssImage1, caption: 'Slide 1' },
-        { id: 2, image: cssImage2, caption: 'Slide 2' },
+        // { id: 2, image: cssImage2, caption: 'Slide 2' },
         { id: 3, image: cssImage3, caption: 'Slide 3' },
         { id: 4, image: cssImage4, caption: 'Slide 4' },
         { id: 5, image: cssImage5, caption: 'Slide 5' },
@@ -52,13 +52,13 @@ const MediaSliderCarousel = () => {
             {/* <div className="row-header"> */}
                 <h2 className='carousel-heading'>TECHNOLOGIES</h2>
             {/* </div> */}
-            <div className="row">
+            <div className="row media-carousel-mobile">
                 <div className="col-md-12">
                     <Carousel activeIndex={activeIndex} onSelect={(index) => setActiveIndex(index)} id="media">
                         {[...Array(numSlides)].map((_, slideIndex) => (
                             <Carousel.Item key={slideIndex} className={slideIndex === 0 ? 'active' : ''}>
-                                <div className="row">
-                                    {carouselItems.slice(slideIndex * 5, slideIndex * 5 + 5).map((innerItem) => (
+                                <div className="row media-carousel-mobile-inside">
+                                    {carouselItems.slice(slideIndex * 4, slideIndex * 4 + 4).map((innerItem) => (
                                         <div className="col-md-2" key={innerItem.id}>
                                             {/* <a className="thumbnail" href="/"> */}
                                                 <img src={innerItem.image} alt={`Slide ${innerItem.id}`} />

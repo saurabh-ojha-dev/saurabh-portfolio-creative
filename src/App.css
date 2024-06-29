@@ -9,7 +9,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .navbar {
-  background-color: rgb(18, 18, 62);
+  background-color: #005c91;
 }
 
 nav {
@@ -17,7 +17,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 80px;
-  background-color: rgb(18, 18, 62);
+  background-color: #005c91;
 }
 
 nav ul {
@@ -33,11 +33,12 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: white;
+  font-size: 21px;
 }
 
 nav ul li a:hover {
-  color: #8a19e3;
-  font-size: 1.2rem;
+  color: #47cdf2;
+  font-size: 2rem;
 }
 
 main hr {
@@ -109,9 +110,11 @@ canvas {
 }
 
 .secondSection {
-  max-width: 80vw;
+  max-width: 100vw;
   margin: auto;
   height: 50vh;
+  background: #005c91;
+  padding: 50px 10vw;
 }
 
 .secondSection h1 {
@@ -140,6 +143,9 @@ canvas {
   left: -30px;
 }
 
+img.social-media-icons-image {
+  background: #c8a3a3;
+}
 .vertical-title {
   position: relative;
   top: 25px;
@@ -158,30 +164,50 @@ canvas {
 
 .vertical-title:hover,
 .vertical-desc:hover {
-  color: #8a19e3;
+  color: #ffa600;
   font-size: large;
   cursor: pointer;
 }
 
 .footer {
   display: flex;
-  padding: 23px 122px;
-  justify-content: space-evenly;
-  background-color: #0e0e1a;
+  /* padding: 23px 122px; */
+  justify-content: space-around;
+  background-color: #005c91;
 }
 
 .footer ul {
   list-style: none;
 }
 
-.footer > div {
-  width: 223px;
+.footer-first {
+  padding: 20px;
+}
+
+@medisa only screen and (min-width: 800px) {
+  .is-mobile {
+    display: none;
+  }
+}
+
+@medisa only screen and (min-width: 800px) {
+  .footer > div {
+    width: 33.33%;
+  }
+}
+ul.social-media-icons {
+  display: block;
+  padding: 0;
+  text-align: center;
+}
+ul.social-media-icons li {
+  display: inline-block;
 }
 
 .footer-rights {
-  background-color: #0e0e1a;
+  background-color: #003e62;
   text-align: center;
-  color: gray;
+  color: #fff;
   padding: 12px 0;
 }
 .fancy {
@@ -203,6 +229,7 @@ canvas {
   background-clip: padding-box;
   transition: 0.5s all;
 }
+
 /* Responsive Css Coding Created By Shift Media Solutions| SMS */
 .gb-bordered:after {
   transition: 0.5s all;
@@ -270,87 +297,6 @@ canvas {
   );
 }
 
-/* @media screen and (max-width: 1400px) {
-  body {
-    min-width: fit-content;
-  }
-
-  .box {
-    flex-direction: column;
-  }
-
-  .secondSection .vertical {
-    height: unset;
-  }
-
-  .vertical-title {
-    position: relative;
-    width: 150px;
-    font-size: 14px;
-  }
-
-  .vertical-title,
-  .vertical-desc {
-    left: 45px;
-    top: 65px;
-  }
-  .vertical-title:hover,
-  .vertical-desc:hover {
-    color: #8a19e3;
-  }
-
-  .secondSection .box {
-    width: 50vh;
-  }
-
-  nav {
-    flex-direction: column;
-  }
-
-  .firstSection {
-    flex-direction: column-reverse;
-  }
-  .name-title {
-    width: 50%;
-  }
-
-  .leftSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .rightSection {
-    width: 721px !important;
-    display: flex;
-    justify-content: center;
-  }
-
-  .rightSection img {
-    width: 45vw;
-    margin-bottom: 73px;
-  }
-
-  .image-top {
-    top: 133px;
-  }
-
-  .secondSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 141vh;
-  }
-
-  .developer-title {
-    display: flex;
-    justify-content: center;
-    color: rgb(170, 107, 228);
-    width: 30vh;
-  }
-} */
-
 .navigation-button {
   text-decoration: none;
   list-style: none;
@@ -377,6 +323,7 @@ canvas {
   padding-left: 260px;
   padding-right: 260px;
   padding-top: 100px;
+  padding-bottom: 50px;
 }
 .intro {
   display: contents;
@@ -404,7 +351,7 @@ canvas {
   padding: 20px;
   margin: 50px;
   padding-left: 10px;
-  margin-left: -150px;
+  margin-left: -315px;
   border-radius: 40px;
   border: 4px solid #30ce43;
   background-color: #30ce43;
@@ -458,80 +405,34 @@ canvas {
 .heading-contact-me {
   color: black;
 }
-/* 
-@media (max-width: 768px) {
-  .name-title {
-    font-size: 1.5rem;
-  }
 
-  .developer-title {
-    font-size: 1.2rem;
-  }
+.main-project-section {
+  background-color: #7fbbdd;
+}
 
-  .button button {
-    font-size: 0.9rem;
-  }
+span.contact-me-heading-green {
+  color: #16e916;
+}
+.container.calling-section-mobile {
+  background-color: wheat;
+  border-radius: 40px;
+}
 
-  .carousel-heading {
-    font-size: 1.5rem;
-  }
-
-  .card-title {
-    font-size: 1.2rem;
-  }
-
-  .card-description {
-    font-size: 0.9rem;
-  }
-
-  .card-btn {
-    font-size: 0.9rem;
-  }
-} */
-
-/* @media (max-width: 480px) {
-  .name-title {
-    font-size: 1.2rem;
-  }
-
-  .developer-title {
-    font-size: 1rem;
-  }
-
-  .button button {
-    font-size: 0.8rem;
-  }
-
-  .carousel-heading {
-    font-size: 1.2rem;
-  }
-
-  .card-title {
-    font-size: 1rem;
-  }
-
-  .card-description {
-    font-size: 0.8rem;
-  }
-
-  .card-btn {
-    font-size: 0.8rem;
-  }
-
-  .canvas {
-    display: block;
-  }
-} */
- 
- /* Responsive css starts here */
+/* Responsive css starts here */
 
 @media screen and (max-width: 800px) {
-
   div {
     display: block;
   }
   nav {
     display: inline-block;
+  }
+
+  .left {
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    left: -80px;
   }
 
   .firstSection {
@@ -549,34 +450,204 @@ canvas {
     display: block;
     flex-direction: column;
     align-items: center;
-    height: 0vh;
+    padding: 20px;
+    max-width: 100vw;
+    margin: auto;
+    height: 70vh;
+    padding: 26px 10vw;
   }
 
-  .leftSection{
-    width: 0%;
+  .box.secondSection {
+    padding: 0;
   }
+
+  .second-section-br {
+    display: none;
+  }
+  section.thirdSection {
+    margin-bottom: -120px;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vertical {
+    position: relative;
+    left: -138px;
+  }
+
+  .vertical-title {
+    font-size: 13px;
+    top: 30px;
+    left: 40px;
+  }
+
+  .vertical-title-date {
+    font-size: 12px;
+    top: 30px;
+    left: 40px;
+  }
+
+  .vertical-desc {
+    font-size: 12px;
+    top: 30px;
+    left: 40px;
+  }
+
+  .image-top {
+    width: 50px; /* Adjust image size as needed */
+    height: auto;
+    position: relative;
+    top: 80px;
+    /* left: -57px; */
+  }
+
+  .firstSection > div {
+    width: 100%;
+  }
+  .name-title {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .developer-title {
+    font-size: 1rem;
+  }
+  button#gb10 {
+    font-size: xx-small;
+    margin: 13px;
+  }
+  .leftSection {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  main hr {
+    border: 0;
+    background-color: #9c97f1;
+    height: 1.2px;
+    margin: 20px 0;
+  }
+
   .social-media-icons {
     display: block;
-}
-  
+  }
+
   .row-achievemnts {
     display: block;
-}
-  
- 
-.row-achievemnts-second {
-  display: block;
-}
-.row-achievemnts-second {
-   padding-left: 0px; 
-   padding-right: 0px; 
-   padding-top: 0px; 
+    overflow: visible;
+    padding-top: 40%;
+  }
+
+  .row-achievemnts-second {
+    display: block;
+
+    padding-bottom: 0px;
+  }
+  .row-achievemnts-second {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+
+  .footer {
+    display: block;
+    padding: 10px;
+    justify-content: space-evenly;
+    background-color: #005c91;
+  }
+
+  .thirdSection-column {
+    margin-left: 0px;
+  }
+
+  .media-carousel-mobile {
+    padding: 0px 80px 0px 80px !important;
+  }
+  .media-carousel-mobile-inside {
+    padding: 50px 80px 50px 80px !important;
+  }
+
+  .footer-mobile {
+    height: 80px;
+    width: 80px;
+  }
+
+  img.avatar {
+    height: 150px;
+    margin: 20px;
+  }
+
+  .mobile-subscribe-row {
+    display: block;
+  }
+
+  .contact-me-subscribe {
+    padding: 20px;
+    width: 80%;
+    margin: 5px 0px 0px 5px;
+    border-radius: 40px;
+    border: 4px solid #30ce43;
+  }
+
+  .contact-me-button {
+    width: auto;
+    padding: 20px;
+    margin: 0px;
+    padding-left: 10px;
+    margin-left: -122px;
+    border-radius: 40px;
+    border: 4px solid #30ce43;
+    background-color: #30ce43;
+  }
+  .contact-me-main-section {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  section.section.introduction-summary.is-medium.is-primary.has-text-centered.is-long {
+    padding-top: 40px;
+  }
+
+  .container.calling-section-mobile {
+    /* margin: 10px; */
+  }
+  .row.form-section-mobile {
+    padding: 40px !important;
+  }
+  h3.heading-contact-me {
+    text-align: center;
+  }
+
+  .col-md-2 {
+    flex:0 0;
+    max-width: 100px;
+    padding: 0px;
+  }
+  .ci-row {
+    /* width: 0%;    */
+  }
+
+  #contact-information-text {
+    margin-top: 8px;
 }
 
-.footer > div {
-  width: 0px;
+  div#contact-information {
+    justify-content: normal;
+  }
+
 }
 
-
-
+.popup {
+  position: fixed;
+  top: 200px;
+  right: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }

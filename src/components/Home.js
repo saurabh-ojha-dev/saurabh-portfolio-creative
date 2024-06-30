@@ -80,9 +80,9 @@ const Home = () => {
 
                 <section className="firstSection">
                     <div className="leftSection">
-                        <div className='name-title'> Hi, My name is
+                        <div className='name-title'> Hey, I'm
                             <span className="purple"> Saurabh </span>
-                            and I am a passionate
+                            a passionate
                         </div>                        
                         <div className='developer-title'>
                             <ReactTyped

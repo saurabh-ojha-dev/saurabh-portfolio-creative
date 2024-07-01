@@ -692,3 +692,7 @@ button.contact-me-button {
   width: 150px;
   margin: 0;
 }
+
+.row.mobile-subscribe-row {
+  margin: 10px;
+}

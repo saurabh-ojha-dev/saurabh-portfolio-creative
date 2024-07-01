@@ -671,3 +671,25 @@ span.contact-me-heading-green {
 section.secondSection {
   box-sizing: unset;
 }
+
+form.form.mobile-subscribe {
+  text-align: center;
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    flex-shrink: initial;
+    padding: 0;
+}
+input.contact-me-subscribe {
+  margin: 0;
+  width: 100%;
+  padding-right: 160px;
+}
+button.contact-me-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 150px;
+  margin: 0;
+}
+

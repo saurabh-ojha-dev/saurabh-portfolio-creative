@@ -564,7 +564,7 @@ span.contact-me-heading-green {
   }
 
   .media-carousel-mobile {
-    padding: 0px 80px 0px 80px !important;
+    padding: 0px !important;
   }
   .media-carousel-mobile-inside {
     padding: 50px 80px 50px 80px !important;
@@ -692,4 +692,3 @@ button.contact-me-button {
   width: 150px;
   margin: 0;
 }
-

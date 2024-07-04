@@ -18,7 +18,7 @@ function Header() {
       {/* <!-- header starts here --> */}
       <header>
         <nav>
-          <div className="left"><img src={require("../assets/images/logos_28.jpg")} height={"60px"} width={"60px"} alt="logo" style={{ paddingRight: "10px" }} />Saurabh's Portfolio</div>
+          <div className="left"><img src={require("../assets/images/logos_28.png")} height={"60px"} width={"60px"} alt="logo" style={{ paddingRight: "10px" }} />Saurabh's Portfolio</div>
           <div className="menu-icon" onClick={toggleMenu}>
             &#9776; {/* This is a hamburger icon */}
           </div>

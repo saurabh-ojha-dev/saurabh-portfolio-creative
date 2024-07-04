@@ -6,7 +6,7 @@ const Footer = () => {
         <>
             <div className="footer">
                 <div className="footer-first" style={{ textAlign: "center" }}>
-                    <img src={require("../assets/images/logos_28.jpg")} height={"120px"} width={"120px"} alt="logo" className="footer-mobile"/>
+                    <img src={require("../assets/images/logos_28.png")} height={"120px"} width={"120px"} alt="logo" className="footer-mobile"/>
                 </div>
 
                 <div className="footer-second">

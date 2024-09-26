@@ -395,6 +395,7 @@ section.section.is-medium.is-primary.has-text-centered.is-long {
   margin: 0 auto;
   position: relative;
   width: auto;
+  padding-bottom: 100px;
 }
 
 .box {

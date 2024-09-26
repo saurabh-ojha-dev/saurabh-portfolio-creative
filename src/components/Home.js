@@ -115,14 +115,15 @@ const Home = () => {
                         </div>
                         <div className="vertical">
                             <img className="image-top" src={require("../assets/images/web.png")} alt="load" />
-                            <div className="vertical-title">Web Developer Intern <div className='vertical-title-date'> (April 2023 - May 2023)</div></div>
-                            <div className="vertical-desc"><a className='work-experience-link' href="https://vedobi.com/" target='_blank' rel="noreferrer">Bestone Healthcare Products Private Limited </a> </div>
+                            <div className="vertical-title">Full Stack Web Developer <div className='vertical-title-date'> (April 2023 - July 202)</div></div>
+                            <div className="vertical-desc"><a className='work-experience-link' href="https://vedobi.com/" target='_blank' rel="noreferrer">Bestone Healthcare Products Private Limited (E-commerce) </a> </div>
                         </div>
                         <div className="vertical">
                             <img className="image-top" src={require("../assets/images/web.png")} alt="load" />
-                            <div className="vertical-title">Full Stack Web Developer <div className='vertical-title-date'> (june 2023 - Present)</div></div>
-                            <div className="vertical-desc"><a className='work-experience-link' href="https://vedobi.com/" target='_blank' rel="noreferrer">Vedobi (E-commerce) </a> </div>
+                            <div className="vertical-title">Associate Software Engineer <div className='vertical-title-date'> (July 2024 - Present)</div></div>
+                            <div className="vertical-desc"><a className='work-experience-link' href="https://blackcoffer.com/" target='_blank' rel="noreferrer">Blackcoffer</a> </div>
                         </div>
+                        
 
                     </div>
                 </section>

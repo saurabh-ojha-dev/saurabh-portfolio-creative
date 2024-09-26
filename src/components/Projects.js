@@ -47,8 +47,9 @@ const Projects = () => {
                         </div>
                         </div>
 
-                        <div className='row-achievemnts-second'>
-                        
+                        {/* <div className='row-achievemnts-second'> */}
+                        <div className='row-achievemnts'>
+
                         <div className='column'>
                             <article className="card">
                                 <img src={require("../assets/images/crm panel.png")} alt="" className="card-img" />
@@ -66,12 +67,22 @@ const Projects = () => {
                                 <div className="card-data">
                                     <h2 className="card-title">Visualization Dashboard</h2>
                                     <p className="card-description">
-                                    A dynamic dashboard for visualizing key metrics through interactive graphs, enhancing data-driven decision-making & performance tracking.</p>
-                                    <a href="https://github.com/Saurabh-ojha-2000/Graphs-Visualization-Dashboard" target='_blank'  rel="noreferrer" className="card-btn">Check it Out</a>
+                                    The Visualization Dashboard is a user management tool that displays key user information,it allows for quick filtering by name, email,etc.</p>
+                                    <a href="https://visualization-user-dashboard.vercel.app/" target='_blank'  rel="noreferrer" className="card-btn">Check it Out</a>
                                 </div>
                             </article>
                         </div>
-
+                        <div className='column'>
+                            <article className="card">
+                                <img src={require("../assets/images/logo1.png")} alt="" className="card-img" />
+                                <div className="card-data">
+                                    <h2 className="card-title">Ostium Doors & Windows</h2>
+                                    <p className="card-description">
+                                    Ostium Doors & Windows Website: A Next.js-Powered Platform Showcasing Premium Steel Doors & Windows  Solutions"</p>
+                                    <a href="https://ostium-frontend.vercel.app/" target='_blank'  rel="noreferrer" className="card-btn">Check it Out</a>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </div>

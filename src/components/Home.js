@@ -92,7 +92,7 @@ const Home = () => {
                             <br />
                         </div>
                         <div className='button' style={{ textAlign: "center" }}>
-                            <a href="https://drive.google.com/file/d/1q1WMhpg06MW0AGUX4htlLAoBGsPeeJM5/view?usp=drive_link" target='_blank' rel="noreferrer">   <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Download Resume</button></a>
+                            <a href="https://drive.google.com/file/d/18LvLWg9bR3urJFVEtd7UIomnXSr3qZcb/view" target='_blank' rel="noreferrer">   <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Download Resume</button></a>
                             <a href="https://drive.google.com/file/d/1UiVjfRTPxJgljfuQOJZS3fyua8jQgP4G/view?usp=drive_link" target='_blank' rel="noreferrer" style={{ textDecoration: "none" }}>   <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Download Cover Letter</button></a>
                         </div>
                     </div>

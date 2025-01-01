@@ -57,7 +57,7 @@ const Projects = () => {
                                     <h2 className="card-title">CRM Panel</h2>
                                     <p className="card-description">
                                         The Comprehensive Customer CRM Panel is an advanced system for managing customer interactions, orders, and feedback to enhance efficiency and customer satisfaction.</p>
-                                    <a href="https://github.com/Saurabh-ojha-2000/Admin-Panel" target="_blank"  rel="noreferrer" className="card-btn">Check it Out</a>
+                                    <a href="https://github.com/Saurabh-ojha-2000/crm-panel-frontend" target="_blank"  rel="noreferrer" className="card-btn">Check it Out</a>
                                 </div>
                             </article>
                         </div>

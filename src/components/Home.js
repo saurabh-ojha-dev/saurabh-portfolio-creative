@@ -92,8 +92,8 @@ const Home = () => {
                             <br />
                         </div>
                         <div className='button' style={{ textAlign: "center" }}>
-                            <a href="https://drive.google.com/file/d/18LvLWg9bR3urJFVEtd7UIomnXSr3qZcb/view" target='_blank' rel="noreferrer">   <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Download Resume</button></a>
-                            <a href="https://drive.google.com/file/d/1UiVjfRTPxJgljfuQOJZS3fyua8jQgP4G/view?usp=drive_link" target='_blank' rel="noreferrer" style={{ textDecoration: "none" }}>   <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Download Cover Letter</button></a>
+                            <a href="https://drive.google.com/file/d/1HgHI1D3gKVo5PJ9V6Yoz7I-IdVzdnCO2/view?usp=sharing" target='_blank' rel="noreferrer">   <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Download Resume</button></a>
+                            <a href="https://drive.google.com/file/d/1jV47untzqqPa-G0Qz109DvKaZeGwl0RN/view?usp=sharing" target='_blank' rel="noreferrer" style={{ textDecoration: "none" }}>   <button className="gb gb-bordered hover-slide hover-fill" id="gb10">Download Cover Letter</button></a>
                         </div>
                     </div>
                     <div className="rightSection"><img className="homejs-image" src={require("../assets/images/bg.png")} alt="Loading" /></div>

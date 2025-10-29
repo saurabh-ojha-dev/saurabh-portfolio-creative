@@ -13,6 +13,8 @@ import corritImg from '../../public/images/projects/Corrit-Dashboard.png';
 import ostiumImg from '../../public/images/projects/ostium-project.png';
 import dochemoImg from '../../public/images/projects/dochemo.png';
 import stackbloomImg from '../../public/images/projects/Stackbloom.png';
+import webrecruitmentImg from '../../public/images/projects/webrecruitment.png';
+
 import { motion } from 'framer-motion';
 
 const FramerImage = motion(Image);
@@ -29,7 +31,7 @@ const FeaturedProject = ({ type, title, summary, img, link }) => {
         <FramerImage
           src={img}
           alt={title}
-          className="w-full h-auto"
+          className="w-full h-auto aspect-video object-cover"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           priority
@@ -82,7 +84,7 @@ const Project = ({ title, type, img, link }) => {
         <FramerImage
           src={img}
           alt={title}
-          className="w-full h-auto"
+          className="w-full h-auto aspect-video object-cover"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
         />
@@ -145,16 +147,16 @@ const projects = () => {
               />
             </div>
 
-            <div className="col-span-6 sm:col-span-12">
+            {/* <div className="col-span-6 sm:col-span-12">
               <Project
-                title="READ - STIX Cybersecurity Platform"
+                title="READ - STIX Cybersecurity Platformda"
                 img={readImg}
                 link="https://www.elemendar.ai/read"
                 github="https://github.com/saurabh-ojha-dev"
                 type="Full Stack Project"
               />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
+            </div> */}
+            {/* <div className="col-span-6 sm:col-span-12">
               <Project
                 title="WorkRise - Freelance Platform"
                 img={workriseImg}
@@ -162,7 +164,7 @@ const projects = () => {
                 github="https://github.com/saurabh-ojha-dev"
                 type="Full Stack Project"
               />
-            </div>
+            </div> */}
 
             <div className="col-span-12">
               <FeaturedProject
@@ -187,7 +189,7 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="WebRecruitment Portal"
-                img={readImg}
+                img={webrecruitmentImg}
                 link="https://webrecruitment.mooo.com/"
                 github="https://github.com/saurabh-ojha-dev"
                 type="Full Stack Project"

@@ -1,47 +1,130 @@
-# Next.Js Website Tutorial: Create a Stunning Portfolio Website with Nextjs, Tailwind CSS and Framer-motion🌟
+# Saurabh Ojha - Full Stack Web Developer Portfolio 🚀
 
-![GitHub stars](https://img.shields.io/github/stars/codebucks27/Next.js-Developer-Portfolio-Starter-Code?style=social&logo=ApacheSpark&label=Stars)&nbsp;&nbsp;
-![GitHub forks](https://img.shields.io/github/forks/codebucks27/Next.js-Developer-Portfolio-Starter-Code?style=social&logo=KashFlow&maxAge=3600)&nbsp;&nbsp;
-![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow)&nbsp;&nbsp;<br />
+A modern, responsive portfolio website showcasing my work, skills, and experience as a Full Stack Web Developer. Built with Next.js, Tailwind CSS, and Framer Motion for smooth animations and optimal performance.
 
-This repository contains starter code for Portfolio website created using NextJs. <br />
+## 👨‍💻 About Me
 
-For Demo and Final Code checkout following link👇: <br />
-[Nextjs Portfolio Website](https://devdreaming.com//videos/nextjs-tutorial-build-portfolio-tailwind-css-framer-motion#code-links) <br />
+Full Stack Web Developer with 3+ years of experience specializing in:
+- **Frontend:** React.js, Next.js, TypeScript, Tailwind CSS, Redux, Zustand
+- **Backend:** Node.js, Express.js, REST APIs, Microservices
+- **Databases:** PostgreSQL, MongoDB, MySQL, Supabase, GraphDB
+- **Cloud & DevOps:** AWS, GCP, Docker, CI/CD
+- **AI/ML Integration:** OpenAI, NLP-driven automation
 
-If you want to learn how to create it please follow below tutorial👇: <br />
-https://youtu.be/Yw7yWHigGKI <br />
-[![YouTube Video Views](https://img.shields.io/youtube/views/Yw7yWHigGKI?style=social)](https://youtu.be/Yw7yWHigGKI)<br />
-
----
-✨ Checkout my brand new Saas application -> [AI Headshot Generator](https://www.smartheadshots.ai)
+Currently working as a **Software Engineer at Blackcoffer**, delivering full-stack applications and AI-driven platforms with 99.999% uptime.
 
 ---
 
-### Images of The Portfolio Website:
+## 🎯 Featured Projects
 
-![Nextjs Portfolio Website](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/home-light-desktop.png)
-![Nextjs Portfolio Website Dark Mode](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/home-dark-desktop.png)
-![Next.js Portfolio Website](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/about-light-desktop.png)
-![Next js Portfolio Website](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/projects-dark-desktop.png)
-![Portfolio Website In Next.js](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/articles-light-desktop.png)
-![Responsive Portfolio Website In Nextjs](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/about-light-mobile.png)
-![Responsive Portfolio Website In Next js](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/projects-light-mobile.png)
-![Mobile Responsive Portfolio Website In Next.js](https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/blob/main/website%20images/articles-light-mobile.png)
+### 1. **Aptify** - AI Platform for Datacenter Operations
+An agentic AI platform leveraging natural language processing and collaborative AI agents for datacenter operations. Automates audits, compliance, and integrates with DCIM systems for real-time insights and predictive maintenance.
+- [Live Demo](https://app.apti-fy.ai/)
 
+### 2. **READ** - STIX Cybersecurity Platform
+A cybersecurity threat intelligence platform that converts STIX 2.1 data into advanced models with D3.js visualizations, GraphDB, and Docker containerization for real-time threat intelligence.
+- [Live Demo](https://www.elemendar.ai/read)
 
-### Resources Used in This Project
+### 3. **WorkRise** - Freelance Platform
+A cutting-edge freelance platform with Stripe payment integration and secure JWT-based authentication built on Next.js, Express.js, and PostgreSQL/Prisma stack.
+- [Live Demo](https://work-rise.vercel.app/)
 
-- Profile image in the home page created by using https://www.midjourney.com/ tool.
-- Profile image in the about page by [Albert Dera](https://unsplash.com/@albertdera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) 
-on [Unsplash](https://unsplash.com/photos/ILip77SbmOE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
-- Fonts from https://fonts.google.com/ <br />
-- Icons from https://iconify.design/ <br />
-- LightBulb Svg from https://lukaszadam.com/illustrations <br />
+### 4. **Additional Projects**
+- **CorrIt Admin Dashboard** - Rental platform management system
+- **DoChomoEo** - Healthcare platform for homeopathy services
+- **StackBloom** - Portfolio & case studies website
+- **Airkrit** - Clean landing page with modern UI/UX
+- **WebRecruitment Portal** - Recruitment management system
 
-### External Libraries used in this project:
+---
 
-- [framer-motion](https://www.framer.com/motion/) <br />
-- [Tailwind css](https://tailwindcss.com/) <br />
+## 🛠️ Tech Stack
 
+This portfolio is built using:
 
+- **Framework:** [Next.js 14](https://nextjs.org/) - React framework with server-side rendering
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- **Animations:** [Framer Motion](https://www.framer.com/motion/) - Production-ready animation library
+- **Language:** JavaScript/JSX
+- **Deployment:** Vercel (recommended) or any Node.js hosting platform
+
+---
+
+## 📦 Installation & Setup
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Steps
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/saurabh-portfolio-creative.git
+cd saurabh-portfolio-creative
+```
+
+2. **Install dependencies**
+```bash
+npm install
+# or
+yarn install
+```
+
+3. **Run the development server**
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. **Open in browser**
+Navigate to [http://localhost:3000](http://localhost:3000) to view the portfolio.
+
+5. **Build for production**
+```bash
+npm run build
+npm start
+# or
+yarn build
+yarn start
+```
+---
+
+## 🎨 Features
+
+- ✅ **Fully Responsive** - Works seamlessly on desktop, tablet, and mobile devices
+- ✅ **Dark Mode Support** - Toggle between light and dark themes
+- ✅ **Smooth Animations** - Powered by Framer Motion
+- ✅ **SEO Optimized** - Meta tags and proper page structure
+- ✅ **Fast Performance** - Optimized images and code splitting
+- ✅ **Interactive Skills Section** - Animated circular skill display
+- ✅ **Project Showcase** - Featured and regular project cards
+- ✅ **Experience Timeline** - Animated career journey
+- ✅ **Downloadable Resume** - Direct PDF download
+
+---
+
+## 📧 Contact
+
+- **Email:** sourabhojha12@gmail.com
+- **LinkedIn:** [Connect with me](https://www.linkedin.com/in/saurabh-ojha-dev)
+- **GitHub:** [@saurabh-ojha-dev](https://github.com/saurabh-ojha-dev)
+
+---
+
+## 📄 License
+
+This project is open source and available for personal use. Feel free to fork and customize for your own portfolio!
+
+---
+
+## 🙏 Acknowledgments
+
+- Icons from [Iconify](https://iconify.design/)
+- Fonts from [Google Fonts](https://fonts.google.com/)
+- UI inspiration from modern web design trends
+
+---
+
+**Built with 💙 by Saurabh Ojha**

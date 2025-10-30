@@ -48,11 +48,11 @@ const FeaturedProject = ({ type, title, summary, img, link }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light lg:text-3xl md:text-2xl sm:text-xl xs:text-lg">
             {title}
           </h2>
         </Link>
-        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+        <p className="my-2 font-medium text-dark dark:text-light md:text-sm sm:text-xs">
           {summary}
         </p>
         <div className="mt-2 flex items-center">
@@ -62,7 +62,7 @@ const FeaturedProject = ({ type, title, summary, img, link }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base xs:text-sm xs:px-3 xs:p-1.5"
           >
             Visit Project
           </Link>
@@ -91,7 +91,7 @@ const Project = ({ title, type, img, link }) => {
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base">
+        <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base sm:text-sm">
           {type}
         </span>
         <Link
@@ -99,7 +99,7 @@ const Project = ({ title, type, img, link }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl md:text-xl sm:text-lg">
             {title}
           </h2>
         </Link>
@@ -108,7 +108,7 @@ const Project = ({ title, type, img, link }) => {
           <Link
             href={link}
             target="_blank"
-            className="text-lg font-semibold underline md:text-base"
+            className="text-lg font-semibold underline md:text-base sm:text-sm"
           >
             Visit
           </Link>

@@ -44,32 +44,10 @@ const about = () => {
             text="Passion Fuels Purpose!"
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
-          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
-            <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
-                Biography
-              </h2>
-              <p className="font-medium">
-                Hi, I&apos;m Saurabh Ojha, a Full Stack Web Developer with a
-                passion for creating dynamic and responsive web applications. With 3+ years of experience in the field, I am always looking for
-                new and innovative ways to bring ideas to life through code.
-              </p>
-
-              <p className="my-4 font-medium">
-                I excel in both front-end and back-end development, specializing in technologies like React.js, Next.js, Node.js, Express.js, and cloud platforms. My strong problem-solving skills and commitment to staying current with industry trends make me a valuable asset to any development team.
-              </p>
-
-              <p className="font-medium">
-                Whether I&apos;m working on a full-stack application, developing AI-driven platforms, or
-                building scalable microservices, I bring my commitment to technical excellence and
-                innovative thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
-              </p>
-            </div>
-
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
+          <div className="grid w-full grid-cols-8 gap-16 md:flex md:flex-col sm:gap-8">
+            {/* Profile Image - First on mobile */}
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:w-full md:p-6 sm:p-5">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light md:-right-2 sm:-right-2" />
               <Image
                 src={profilePic}
                 alt="Saurabh Ojha"
@@ -79,30 +57,56 @@ const about = () => {
               />
             </div>
 
-            <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
-              <div className="flex flex-col items-end justify-center xl:items-center">
+            {/* Biography - Second on mobile */}
+            <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:w-full">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75 sm:text-base">
+                Biography
+              </h2>
+              <p className="font-medium text-base md:text-sm sm:text-sm">
+                Hi, I&apos;m Saurabh Ojha, a Full Stack Web Developer with a
+                passion for creating dynamic and responsive web applications. With 3+ years of experience in the field, I am always looking for
+                new and innovative ways to bring ideas to life through code.
+              </p>
+
+              <p className="my-4 font-medium text-base md:text-sm sm:text-sm">
+                I excel in both front-end and back-end development, specializing in technologies like React.js, Next.js, Node.js, Express.js, and cloud platforms. My strong problem-solving skills and commitment to staying current with industry trends make me a valuable asset to any development team.
+              </p>
+
+              <p className="font-medium text-base md:text-sm sm:text-sm">
+                Whether I&apos;m working on a full-stack application, developing AI-driven platforms, or
+                building scalable microservices, I bring my commitment to technical excellence and
+                innovative thinking to every project I work on. I look
+                forward to the opportunity to bring my skills and passion to
+                your next project.
+              </p>
+            </div>
+
+            {/* Stats - Third on mobile */}
+            <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:w-full md:flex-row md:justify-between sm:flex-col md:gap-8 sm:gap-6">
+              <div className="flex flex-col items-end justify-center xl:items-center md:items-center sm:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers value={20} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-center md:text-lg sm:text-base xs:text-sm">
                   projects completed
                 </h2>
               </div>
 
-              <div className="flex flex-col items-end justify-center xl:items-center">
+              <div className="flex flex-col items-end justify-center xl:items-center md:items-center sm:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers value={3} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-center md:text-lg sm:text-base xs:text-sm">
                   years of experience
                 </h2>
               </div>
 
-              <div className="flex flex-col items-end justify-center xl:items-center">
-                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  99.999<span className="text-4xl">%</span>
+              <div className="flex flex-col items-end justify-center xl:items-center md:items-center sm:items-center sm:w-full">
+                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl text-center">
+                  99.999
+                  <span className="text-4xl md:text-3xl sm:text-2xl xs:text-xl">%</span>
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-center md:text-lg sm:text-base xs:text-sm">
                   uptime achieved
                 </h2>
               </div>
@@ -117,7 +121,7 @@ const about = () => {
             </h2>
 
             <div className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
-              <motion.div 
+              <motion.div
                 className="absolute left-[18px] top-0 w-[4px] h-full bg-dark origin-top dark:bg-[#58e6d9] md:w-[2px] md:left-[14px] xs:left-[11.5px]"
                 initial={{ scaleY: 0 }}
                 whileInView={{ scaleY: 1 }}
@@ -126,10 +130,10 @@ const about = () => {
               />
 
               <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
-                <li className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]">
+                <li className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%] sm:w-[90%]">
                   <div>
-                    <motion.div 
-                      className="absolute left-0 rounded-full bg-[#58e6d9] border-dark border-4 w-[40px] h-[40px] -mt-2 dark:border-light md:w-[30px] md:h-[30px] xs:w-[25px] xs:h-[25px]"
+                    <motion.div
+                      className="absolute left-0 rounded-full bg-[#58e6d9] border-dark border-4 w-[40px] h-[40px] -mt-2 dark:border-light md:w-[30px] md:h-[30px] xs:w-[25px] xs:h-[25px] xs:border-2"
                       initial={{ scale: 0 }}
                       whileInView={{ scale: 1 }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
@@ -141,16 +145,16 @@ const about = () => {
                     <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
                       07/2024 - Present | Delhi, India
                     </span>
-                    <p className="font-medium w-full md:text-sm">
+                    <p className="font-medium w-full md:text-sm xs:text-xs">
                       Delivered multiple full-stack projects from conception to deployment on AWS/GCP, architecting backends with Express.js and Supabase/PostgreSQL, and building responsive frontends with React.js/Next.js and Zustand/Redux. Developed an NLP-driven automation engine using OpenAI and libreoffice-convert to process complex documents (contracts, RFPs, SOPs), significantly reducing manual compliance and data extraction times.
                     </p>
                   </div>
                 </li>
 
-                <li className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]">
+                <li className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%] sm:w-[90%]">
                   <div>
-                    <motion.div 
-                      className="absolute left-0 rounded-full bg-[#58e6d9] border-dark border-4 w-[40px] h-[40px] -mt-2 dark:border-light md:w-[30px] md:h-[30px] xs:w-[25px] xs:h-[25px]"
+                    <motion.div
+                      className="absolute left-0 rounded-full bg-[#58e6d9] border-dark border-4 w-[40px] h-[40px] -mt-2 dark:border-light md:w-[30px] md:h-[30px] xs:w-[25px] xs:h-[25px] xs:border-2"
                       initial={{ scale: 0 }}
                       whileInView={{ scale: 1 }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
@@ -162,7 +166,7 @@ const about = () => {
                     <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
                       04/2023 - 07/2024 | New Delhi, India
                     </span>
-                    <p className="font-medium w-full md:text-sm">
+                    <p className="font-medium w-full md:text-sm xs:text-xs">
                       Developed and implemented an intuitive admin dashboard, revolutionizing product management by enabling seamless addition, deletion, and monitoring of products on the website, resulting in a 40% reduction in time spent on product updates and increased overall website efficiency. Deployed both backend and frontend on AWS for robust hosting and accessibility.
                     </p>
                   </div>
@@ -177,7 +181,7 @@ const about = () => {
             </h2>
 
             <div className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
-              <motion.div 
+              <motion.div
                 className="absolute left-[18px] top-0 w-[4px] h-full bg-dark origin-top dark:bg-[#58e6d9] md:w-[2px] md:left-[14px] xs:left-[11.5px]"
                 initial={{ scaleY: 0 }}
                 whileInView={{ scaleY: 1 }}
@@ -186,10 +190,10 @@ const about = () => {
               />
 
               <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
-                <li className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]">
+                <li className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%] sm:w-[90%]">
                   <div>
-                    <motion.div 
-                      className="absolute left-0 rounded-full bg-[#58e6d9] border-dark border-4 w-[40px] h-[40px] -mt-2 dark:border-light md:w-[30px] md:h-[30px] xs:w-[25px] xs:h-[25px]"
+                    <motion.div
+                      className="absolute left-0 rounded-full bg-[#58e6d9] border-dark border-4 w-[40px] h-[40px] -mt-2 dark:border-light md:w-[30px] md:h-[30px] xs:w-[25px] xs:h-[25px] xs:border-2"
                       initial={{ scale: 0 }}
                       whileInView={{ scale: 1 }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
@@ -201,16 +205,16 @@ const about = () => {
                     <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
                       01/2020 - 06/2024 | Guru Gobind Singh Indraprastha University
                     </span>
-                    <p className="font-medium w-full md:text-sm">
+                    <p className="font-medium w-full md:text-sm xs:text-xs">
                       CGPA: 8.87/10.0 - Graduated with honors, specializing in full-stack development, data structures, algorithms, and cloud computing. Completed multiple industry-relevant projects involving AI/ML, web development, and microservices architecture.
                     </p>
                   </div>
                 </li>
 
-                <li className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]">
+                <li className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%] sm:w-[90%]">
                   <div>
-                    <motion.div 
-                      className="absolute left-0 rounded-full bg-[#58e6d9] border-dark border-4 w-[40px] h-[40px] -mt-2 dark:border-light md:w-[30px] md:h-[30px] xs:w-[25px] xs:h-[25px]"
+                    <motion.div
+                      className="absolute left-0 rounded-full bg-[#58e6d9] border-dark border-4 w-[40px] h-[40px] -mt-2 dark:border-light md:w-[30px] md:h-[30px] xs:w-[25px] xs:h-[25px] xs:border-2"
                       initial={{ scale: 0 }}
                       whileInView={{ scale: 1 }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
@@ -222,7 +226,7 @@ const about = () => {
                     <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
                       03/2018 - 03/2019 | DSM Public Sr. Sec. School
                     </span>
-                    <p className="font-medium w-full md:text-sm">
+                    <p className="font-medium w-full md:text-sm xs:text-xs">
                       Percentage: 74% - Completed higher secondary education with focus on Physics, Chemistry, and Mathematics, building a strong foundation for engineering studies.
                     </p>
                   </div>

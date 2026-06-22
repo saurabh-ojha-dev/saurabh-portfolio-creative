@@ -14,6 +14,7 @@ import ostiumImg from '../../public/images/projects/ostium-project.png';
 import dochemoImg from '../../public/images/projects/dochemo.png';
 import stackbloomImg from '../../public/images/projects/Stackbloom.png';
 import webrecruitmentImg from '../../public/images/projects/webrecruitment.png';
+import digitalHeroesImg from '../../public/images/projects/digital-heroes.png';
 
 import { motion } from 'framer-motion';
 
@@ -72,7 +73,7 @@ const FeaturedProject = ({ type, title, summary, img, link }) => {
   );
 };
 
-const Project = ({ title, type, img, link }) => {
+const Project = ({ title, type, img, link, github }) => {
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
@@ -112,9 +113,11 @@ const Project = ({ title, type, img, link }) => {
           >
             Visit
           </Link>
-          {/* <Link href={github} target="_blank" className="w-8 md:w-6">
-            <GithubIcon />
-          </Link> */}
+          {github && (
+            <Link href={github} target="_blank" className="w-8 md:w-6">
+              <GithubIcon />
+            </Link>
+          )}
         </div>
       </div>
     </article>
@@ -242,6 +245,16 @@ const projects = () => {
                 link="https://www.stackbloom.in"
                 // github="https://github.com/saurabh-ojha-dev"
                 type="Portfolio Website"
+              />
+            </div>
+
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Digital Heroes - Invoice & GST Calculator"
+                img={digitalHeroesImg}
+                link="https://digital-heroes-assignment-black.vercel.app/"
+                github="https://github.com/saurabh-ojha-dev/Digital-heroes-assignment"
+                type="Full Stack Project"
               />
             </div>
           </div>

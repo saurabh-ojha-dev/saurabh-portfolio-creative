@@ -14,7 +14,6 @@ import ostiumImg from '../../public/images/projects/ostium-project.png';
 import dochemoImg from '../../public/images/projects/dochemo.png';
 import stackbloomImg from '../../public/images/projects/Stackbloom.png';
 import webrecruitmentImg from '../../public/images/projects/webrecruitment.png';
-import digitalHeroesImg from '../../public/images/projects/digital-heroes.png';
 
 import { motion } from 'framer-motion';
 
@@ -245,16 +244,6 @@ const projects = () => {
                 link="https://www.stackbloom.in"
                 // github="https://github.com/saurabh-ojha-dev"
                 type="Portfolio Website"
-              />
-            </div>
-
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Digital Heroes - Invoice & GST Calculator"
-                img={digitalHeroesImg}
-                link="https://digital-heroes-assignment-black.vercel.app/"
-                github="https://github.com/saurabh-ojha-dev/Digital-heroes-assignment"
-                type="Full Stack Project"
               />
             </div>
           </div>
